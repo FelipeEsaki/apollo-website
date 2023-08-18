@@ -1,0 +1,297 @@
+body {
+    max-height: 100vh;
+
+    .first__page {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        background-image: url(img/bg2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        .blur {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to bottom, #01042c, transparent);
+            z-index: 1;
+        }
+
+        // content...
+        .content {
+            position: absolute;
+            z-index: 999;
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: effect1 30s ease-in-out 0s infinite normal forwards;
+
+            // clique e explore...
+            h2 {
+                letter-spacing: 5px;
+
+                @include general-text (.7rem, 300, #fff);
+            }
+
+            // arrow clique e explore...
+            #arrow {
+                width: 50px;
+                color: #fff;
+                animation: effect1 15s ease-in-out 0s infinite reverse forwards;
+            }
+
+            // Apollo
+            h1 {
+                z-index: 3;
+                text-shadow: 0 0 12px #fff;
+
+                a {
+                    text-decoration: none;
+
+                    @include general-text (13rem, normal, #fff);
+                    font-family: 'nasa', serif;
+
+                    // Apollo moon...
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        margin-left: 302px;
+                        margin-top: 63px;
+                        width: 147px;
+                        height: 147px;
+                        border-radius: 50%;
+                        background-image: url(img/planetas/moon.png);
+                        background-size: cover;
+                        animation: moon 15s linear infinite;
+                    }
+                }
+            }
+
+            // legend
+            p {
+                margin-top: 50px;
+                z-index: 3;
+                letter-spacing: 3px;
+
+                @include general-text (2rem, 300, #fff);
+            }
+
+        }
+
+        // stars
+        .stars {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            box-shadow: 0px 0px 10px 2px #fff;
+            animation: animate 5s linear infinite;
+
+            &::before {
+                content: '';
+                width: 200px;
+                height: 2px;
+                transform: translateY(-50%);
+                background: linear-gradient(to right, #fff, transparent);
+                position: absolute;
+                top: 50%;
+            }
+            
+            // child-stars...
+            &:nth-child(1){
+                @include stars-position (-100px, 1800px, 5s, 3s);
+                width: 10px;
+                height: 10px;
+            }
+            &:nth-child(2){
+                @include stars-position (-100px, 1200px, 2s, 1s);
+            }
+            &:nth-child(3){
+                @include stars-position (-500px, 1500px, 2s, 4s);
+                top: -500px;
+                left: 1500px;
+                animation-duration: 2s;
+                animation-delay: 4s;
+            }
+            &:nth-child(4){
+                @include stars-position (-100px, 2300px, 2s, 5s);
+                width: 10px;
+                height: 10px;
+            }
+            &:nth-child(5){
+                @include stars-position (-300px, 1000px, 5s, 1s);
+            }
+            &:nth-child(6){
+                @include stars-position (-100px, 450px, 4s, 1s);
+            }
+            &:nth-child(7){
+                @include stars-position (-100px, 1700px, 4s, 1s);
+                width: 10px;
+                height: 10px;
+            }
+        }
+}
+}
+
+
+
+// mobile
+@media (max-width: 480px) {
+
+
+    body {
+        max-height: 100vh;
+
+        .first__page {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+            background-image: url(img/bg2.jpg);
+            background-position: 50%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            .blur {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100vh;
+                background: linear-gradient(to bottom, #01042c, transparent);
+                z-index: 1;
+            }
+
+            // content...
+            .content {
+                position: absolute;
+                z-index: 999;
+                width: 100%;
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                animation: effect1 30s ease-in-out 0s infinite normal forwards;
+
+                // clique e explore...
+                h2 {
+                    letter-spacing: 5px;
+
+                    @include general-text (.7rem, 300, #fff);
+                }
+
+                // arrow clique e explore...
+                #arrow {
+                    width: 50px;
+                    color: #fff;
+                    animation: effect1 15s ease-in-out 0s infinite reverse forwards;
+                }
+
+                // Apollo
+                h1 {
+                    z-index: 3;
+                    text-shadow: 0 0 12px #fff;
+
+                    a {
+                        text-decoration: none;
+
+                        @include general-text (5rem, normal, #fff);
+                        font-family: 'nasa', serif;
+
+                        // Apollo moon...
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            margin-left: 114px;
+                            margin-top: 22px;
+                            width: 62px;
+                            height: 62px;
+                            border-radius: 50%;
+                            background-image: url(img/planetas/moon.png);
+                            background-size: cover;
+                            animation: moon 15s linear infinite;
+                        }
+                    }
+                }
+
+                // legend
+                p {
+                    margin-top: 50px;
+                    z-index: 3;
+                    letter-spacing: 3px;
+
+                    @include general-text (1rem, 300, #fff);
+                }
+
+            }
+
+            // stars
+            .stars {
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: #fff;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                box-shadow: 0px 0px 10px 2px #fff;
+                animation: animate 5s linear infinite;
+
+                &::before {
+                    content: '';
+                    width: 200px;
+                    height: 2px;
+                    transform: translateY(-50%);
+                    background: linear-gradient(to right, #fff, transparent);
+                    position: absolute;
+                    top: 50%;
+                }
+                
+                // child-stars...
+                &:nth-child(1){
+                    @include stars-position (-100px, 1800px, 5s, 3s);
+                    width: 10px;
+                    height: 10px;
+                }
+                &:nth-child(2){
+                    @include stars-position (-100px, 1200px, 2s, 1s);
+                }
+                &:nth-child(3){
+                    @include stars-position (-500px, 1500px, 2s, 4s);
+                    top: -500px;
+                    left: 1500px;
+                    animation-duration: 2s;
+                    animation-delay: 4s;
+                }
+                &:nth-child(4){
+                    @include stars-position (-100px, 2300px, 2s, 5s);
+                    width: 10px;
+                    height: 10px;
+                }
+                &:nth-child(5){
+                    @include stars-position (-300px, 1000px, 5s, 1s);
+                }
+                &:nth-child(6){
+                    @include stars-position (-100px, 450px, 4s, 1s);
+                }
+                &:nth-child(7){
+                    @include stars-position (-100px, 1700px, 4s, 1s);
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+// general format...
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// imports...
+@import 'mixins';
+@import 'keyframes';
+@import 'index';
+@import 'home';
+@import 'noticias';
+@import 'sistemaSolar';
+@import 'entrar';
+
+// poppins font...
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+// nasa font...
+@font-face {
+    font-family: 'nasa';
+    src: url(fonts/nasalization-rg.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

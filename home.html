@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Apollo - Home</title>
+</head>
+<body>
+    <!-- background image -->
+    <img class="background" src="img/stars.jpg" alt="">
+
+    <!-- atars -->
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+
+    <img id="nave" src="img/nave.png" alt="nane">
+
+    <!-- header -->
+    <header class="header__home">
+        <div class="header__all">
+            <span><a id="logo" href="home.html">Apollo</a></span>
+            <i class="fa-solid fa-bars" onclick="clickMenu()"></i>
+            <nav>
+                <ul>
+                    <li><a id="home" href="home.html">Home</a></li>
+                    <li><a id="noticias" href="noticias.html">Notícias</a></li>
+                    <li><a id="sistemaSolar" href="sistemasolar.html">Sistema Solar</a></li>
+                    <li><a id="entrar" href="entrar.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menu">
+            <ul class="menu__ul">
+                <li class="menu__li" ><a id="home" href="home.html">Home</a></li>
+                <li class="menu__li" ><a id="noticias" href="noticias.html">Notícias</a></li>
+                <li class="menu__li" ><a id="sistemaSolar" href="sistemasolar.html">Sistema Solar</a></li>
+                <li class="menu__li" ><a id="entrar" href="entrar.html">Entrar</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main class="main__home">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" id="radio1" name="input-radio" checked>
+                <input type="radio" id="radio2" name="input-radio">
+
+                <div class="labels">
+                    <label for="radio1"></label>
+                    <label for="radio2"></label>
+                </div>
+
+                <div class="slide first">
+                    <img class="image1" src="img/home img/banner1.png" alt="imagem banner festival de astronomia ">
+                </div>
+                <div class="slide">
+                    <img class="image2" src="img/home img/banner2.png" alt="imagem banner exploração espacial">
+                </div>
+            </div>
+        </div>
+
+        <!-- primeira seção -->
+        <section class="first__section">
+            <h1>Últimas notícias</h1>
+
+            <!-- primeira seção de notícias -->
+            <div class="noticias__first">
+                <!-- buracos negros -->
+                <a id="image1" href="https://www.bbc.com/portuguese/articles/cevjq9gz407o" target="_blank">
+                    <h3>
+                        Cientistas captam pela 1ª vez
+                        ondas de choque de buracos negros gigantes
+                    </h3>
+                </a>
+                <!-- starship -->
+                <a id="image2" href="https://www.bbc.com/portuguese/articles/cxr0ry9ye01o" target="_blank">
+                    <h3>Starship: 'válvula congelada' suspende lançamento de foguete de Elon Musk</h3>
+                </a>
+                <!-- galáxias -->
+                <a id="image3" href="https://www.cnnbrasil.com.br/tecnologia/nasa-divulga-video-com-uma-das-primeiras-galaxias-do-universo-registradas-em-3d-pelo-james-webb/" target="_blank">
+                    <h3>Nasa divulga vídeo com uma das primeiras galáxias do universo</h3>
+                </a>
+            </div>
+
+            <!-- segunda seção de notícias -->
+            <div class="noticias__second">
+                <!-- saturno -->
+                <a id="image4" href="https://www.bbc.com/portuguese/articles/c4npn1kz0e2o" target="_blank">
+                    <h3>
+                        O que luas de Saturno revelam sobre criação do Sistema Solar
+                    </h3>
+                </a>
+                <!-- telescópio -->
+                <a id="image5" href="https://www.cnnbrasil.com.br/tecnologia/construcao-de-telescopio-revolucionario-no-deserto-do-atacama-com-espelho-de-39-metros-esta-50-concluida-veja-fotos/" target="_blank">
+                    <h3>Construção de telescópio revolucionário está 50% concluída</h3>
+                </a>
+                <!-- super lua -->
+                <a id="image6" href="https://www.cnnbrasil.com.br/tecnologia/superlua-brilha-nos-ceus-do-brasil-e-outras-partes-do-mundo-veja-imagens/" target="_blank">
+                    <h3>Superlua brilha nos céus do Brasil e outras partes do mundo</h3>
+                </a>
+            </div>
+
+            <a id="vermais" href="noticias.html">Ver mais</a>
+            <div class="arrow__div"><img id="arrow" src="img/arrow bottom.png"></div>
+
+        </section>
+        <!-- primeira seção fim -->
+
+        <!-- secunda seção -->
+        <section class="second__section">
+            <a id="titleSolarSystem" href="#">Sistema Solar</a>
+
+            <div class="second__section__content">
+                <div class="second__section__content__pbtn">
+                    <p>O Sistema Solar é um conjunto formado por oito planetas e outros corpos celestes que orbitam o Sol,
+                        a sua principal estrela. Está localizado na Via Láctea, uma das galáxias que formam o Universo.
+                        São planetas do Sistema Solar: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno.
+                    </p>
+
+                    <div class="btn"><a href="sistemasolar.html">Explore</a></div>
+                </div>
+
+                <div class="solarSystem">
+                    <img id="sun" src="img/planetas/sun.png" alt="imagem sol">
+                
+                    <div class="mercury">
+                        <img id="mercury" src="img/planetas/mercurio.png" alt="imagem planeta mercurio">
+                    </div>
+                    <div class="venus">
+                        <img id="venus" src="img/planetas/venus.png" alt="imagem planeta venus">
+                    </div>
+                    <div class="earth">
+                        <img id="earth" src="img/planetas/terra.png" alt="imagem planeta terra">
+                    </div>
+                    <div class="mars">
+                        <img id="mars" src="img/planetas/marte.png" alt="imagem planeta marte">
+                    </div>
+                    <div class="jupiter">
+                        <img id="jupiter" src="img/planetas/jupiter.png" alt="imagem planeta jupiter">
+                    </div>
+                    <div class="saturn">
+                        <img id="saturn" src="img/planetas/saturno.png" alt="imagem planeta saturno">
+                    </div>
+                    <div class="uranus">
+                        <img id="uranus" src="img/planetas/urano.png" alt="imagem planeta urano">
+                    </div>
+                    <div class="neptune">
+                        <img id="neptune" src="img/planetas/netuno.png" alt="imagem planeta netuno">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <!-- main fim -->
+
+    <footer class="footer">
+        <div class="footer__logo" href="home.html">
+            Apollo <span>&copy; 2023</span>
+        </div>
+
+        <nav class="footer__content">
+            <ul>
+                <a href="">
+                    <li>Facebook</li>
+                </a>
+                <a href="">
+                    <li>Instagram</li>
+                </a>
+                <a href="home.html">
+                    <li>Home</li>
+                </a>
+                <a href="noticias.html">
+                    <li>Notícias</li>
+                </a>
+                <a href="sistemaSolar.html">
+                    <li>Sistema solar</li>
+                </a>
+                <a href="entrar.html">
+                    <li>Entrar</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

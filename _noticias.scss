@@ -1,0 +1,186 @@
+// header...
+body {
+    background-image: url(img/background\ noticias.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.header__noticias {
+    @include header;
+    z-index: 999;
+    
+    #noticias {
+        border-bottom: 1px solid #fff;
+    }
+
+    #home:hover {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+
+// main...
+.main__noticias {
+    @include main;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+    .noticias__title {
+        @include h1-text;
+        text-transform: uppercase;
+        border-bottom: 1px solid #fff;
+    }
+
+    .noticias {
+        margin: 40px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        position: relative;
+
+        .noticia {
+            background: rgba(255,255,255, 0.03);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            border-radius: 30px;
+            backdrop-filter: blur(10px);
+            padding: 10px 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex-direction: column;
+
+            width: 30%;
+           
+
+            &__imagem {
+                grid-area: imagem;
+
+                img {
+                    border-radius: 30px;
+                    width: 100%;
+                }
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            &__p {
+                @include general-text (1.2rem, 300, #fff);
+                letter-spacing: 3px;
+                grid-area: h2;
+            }
+
+            &__h3 {
+                @include general-text (1rem, 300, #fff);
+                grid-area: h3;
+            }   
+        }
+    }
+
+    .maisLidas {
+        width: 30%;
+        position: fixed;
+        top: 200px;
+        right: 100px;
+        @include general-text (1rem, 300, #fff);
+    }
+}
+// main end...
+
+
+
+
+
+// mobile...
+
+// header...
+@media (max-width: 480px) {
+
+body {
+    background-image: url(img/background\ noticias.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    overflow-x: hidden
+}
+    
+    .header__noticias {
+        @include header-mobile;
+        z-index: 999;
+    }
+
+
+    // main...
+    .main__noticias {
+        @include main-mobile;
+        margin: 0 auto;
+        padding-top: 150px;
+        display: flex;
+        gap: 10px;
+
+        .noticias__title {
+            @include h1-text-mobile;
+            text-transform: uppercase;
+            border-bottom: 1px solid #fff;
+        }
+
+        .noticias {
+            margin: 40px auto;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 10px;
+            position: relative;
+
+            .noticia {
+                width: 180px;
+                background: rgba(255,255,255, 0.03);
+                box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+                border-radius: 30px;
+                backdrop-filter: blur(10px);
+                padding: 10px 15px;
+                display: flex;
+                gap: 5px;
+                justify-content: space-between;
+            
+
+                &__imagem {
+                    grid-area: imagem;
+
+                    img {
+                        border-radius: 30px;
+                        width: 100%;
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                }
+
+                &__p {
+                    @include general-text (.8rem, 500, #fff);
+                    letter-spacing: 3px;
+                    grid-area: h2;
+                }
+
+                &__h3 {
+                    @include general-text (.6rem, 300, #fff);
+                    grid-area: h3;
+                }   
+            }
+        }
+
+        .maisLidas {
+            width: 30%;
+            position: fixed;
+            top: 200px;
+            right: 100px;
+            @include general-text (1rem, 300, #fff);
+        }
+    }
+}
+// main end...

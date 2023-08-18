@@ -1,0 +1,366 @@
+// content animation...
+@keyframes effect1 {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        transform: translateY(-8px);
+    }
+
+    20%,
+    40%,
+    60% {
+        transform: translateY(8px);
+    }
+
+    80% {
+        transform: translateY(6.4px);
+    }
+
+    90% {
+        transform: translateY(-6.4px);
+    }
+}
+
+// background stars scale...
+@keyframes background {
+    0% {
+        scale: (1);
+    }
+    100% {
+        scale: (1.2);
+    }
+}
+
+// moon animation...
+@keyframes moon {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+// moon orbit animation...
+@keyframes orbit {
+    0% {
+        transform: rotate(360deg) translateX(39px);
+
+    }
+
+    100% {
+        transform: rotate(720deg) translateX(39px);
+
+    }
+}
+
+// stars animation...
+@keyframes animate {
+    0% {
+      transform: rotate(315deg) translateX(0);
+    }
+    100% {
+      transform: rotate(315deg) translateX(-4000px);
+    }
+}
+
+@keyframes nave {
+    0% {
+      transform: translateX(0) scale(1);
+    }
+    100% {
+      transform: translateX(2000px) scale(0); 
+    }
+}
+
+// planets orbit home...
+@keyframes mercury {
+    0% {
+        transform: rotate(0) translateX(75px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(75px) rotate(360deg);
+    }
+}
+
+@keyframes venus {
+    0% {
+        transform: rotate(0) translateX(95px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(95px) rotate(360deg);
+    }
+}
+
+@keyframes earth {
+    0% {
+        transform: rotate(0) translateX(115px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(115px) rotate(1800deg);
+    }
+}
+
+@keyframes mars {
+    0% {
+        transform: rotate(0) translateX(135px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(135px) rotate(360deg);
+    }
+}
+@keyframes jupiter {
+    0% {
+        transform: rotate(0) translateX(155px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(155px) rotate(360deg);
+    }
+}
+@keyframes saturn {
+    0% {
+        transform: rotate(0) translateX(180px) rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(180px) rotate(300deg);
+    }
+}
+@keyframes uranus {
+    0% {
+        transform: rotate(0) translateX(200px) rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(200px) rotate(300deg);
+    }
+}
+@keyframes neptune {
+    0% {
+        transform: rotate(0) translateX(220px) rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(220px) rotate(300deg);
+    }
+}
+
+// mobile planets orbit home...
+@keyframes mercury-mobile {
+    0% {
+        transform: rotate(0) translateX(50px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(50px) rotate(360deg);
+    }
+}
+
+@keyframes venus-mobile {
+    0% {
+        transform: rotate(0) translateX(63px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(63px) rotate(360deg);
+    }
+}
+
+@keyframes earth-mobile {
+    0% {
+        transform: rotate(0) translateX(78px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(78px) rotate(1800deg);
+    }
+}
+
+@keyframes mars-mobile {
+    0% {
+        transform: rotate(0) translateX(93px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(93px) rotate(360deg);
+    }
+}
+@keyframes jupiter-mobile {
+    0% {
+        transform: rotate(0) translateX(105px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(105px) rotate(360deg);
+    }
+}
+@keyframes saturn-mobile {
+    0% {
+        transform: rotate(0) translateX(120px) rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(120px) rotate(300deg);
+    }
+}
+@keyframes uranus-mobile {
+    0% {
+        transform: rotate(0) translateX(133px) rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(133px) rotate(300deg);
+    }
+}
+@keyframes neptune-mobile {
+    0% {
+        transform: rotate(0) translateX(148px) rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(148px) rotate(300deg);
+    }
+}
+
+// planets orbit (sistemaSolar.html)...
+@keyframes mercuryS {
+    0% {
+        transform: rotate(0) translateX(60px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(60px) rotate(30000deg);
+    }
+}
+
+@keyframes venusS {
+    0% {
+        transform: rotate(0) translateX(90px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(90px) rotate(20000deg);
+    }
+}
+
+@keyframes earthS {
+    0% {
+        transform: rotate(0) translateX(125px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(125px) rotate(15000deg);
+    }
+}
+
+@keyframes marsS {
+    0% {
+        transform: rotate(0) translateX(165px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(165px) rotate(12000deg);
+    }
+}
+@keyframes jupiterS {
+    0% {
+        transform: rotate(0) translateX(217px) rotate(0);
+    }
+    100% {
+        transform: rotate(360deg) translateX(217px) rotate(360deg);
+    }
+}
+@keyframes saturnS {
+    0% {
+        transform: rotate(0) translateX(-260px) rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(-260px) rotate(300deg);
+    }
+}
+@keyframes uranusS {
+    0% {
+        transform: rotate(0) translateX(-310px) rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(-310px) rotate(300deg);
+    }
+}
+@keyframes neptuneS {
+    0% {
+        transform: rotate(0) translateX(-345px) rotate(300deg);
+    }
+    100% {
+        transform: rotate(360deg) translateX(-345px) rotate(300deg);
+    }
+}
+
+// sun...
+@keyframes sun {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    10% {
+        transform: scale(1.03);
+        opacity: .9;
+    }
+    30% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    40% {
+        transform: scale(1);
+        opacity: .95;
+    }
+    50% {
+        transform: scale(1.02);
+        opacity: .93;
+    }
+    60% {
+        transform: scale(1.02);
+        opacity: .87;
+    }
+    70% {
+        transform: scale(1.01);
+        opacity: .8;
+    }
+    80% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    90% {
+        transform: scale(1.02);
+        opacity: .98;
+    }
+    100% {
+        transform: scale(1);
+        opacity: .95;
+    }
+}
+
+// solar system home text...
+@keyframes ptext {
+    0% {
+        transform: translateX(0px)
+    }
+    10% {
+        transform: translateX(1px)
+    }
+    30% {
+        transform: translateX(2px)
+    }
+    40% {
+        transform: translateX(1px)
+    }
+    50% {
+        transform: translateX(-1px);
+    }
+    60% {
+        transform: translateX(-2px);
+    }
+    70% {
+        transform: translateX(-3px);
+    }
+    80% {
+        transform: translateX(-2px);
+    }
+    90% {
+        transform: translateX(1px)
+    }
+    100% {
+        transform: translateX(0px)
+    }
+}

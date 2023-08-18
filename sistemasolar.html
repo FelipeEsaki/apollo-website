@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema Solar - Apollo</title>
+</head>
+<body>
+    <!-- background image -->
+    <img class="background" src="img/background sistema solar.jpg" alt="">
+
+    <!-- atars -->
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+    <span class="stars"></span>
+
+    <!-- header -->
+    <header class="header__sistemaSolar">
+        <div class="header__all">
+            <span><a id="logo" href="home.html">Apollo</a></span>
+            <i class="fa-solid fa-bars" onclick="clickMenu()"></i>
+            <nav>
+                <ul>
+                    <li><a id="home" href="home.html">Home</a></li>
+                    <li><a id="noticias" href="noticias.html">Notícias</a></li>
+                    <li><a id="sistemaSolar" href="sistemaSolar.html">Sistema Solar</a></li>
+                    <li><a id="entrar" href="entrar.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="menu">
+            <ul class="menu__ul">
+                <li class="menu__li" ><a id="home" href="home.html">Home</a></li>
+                <li class="menu__li" ><a id="noticias" href="noticias.html">Notícias</a></li>
+                <li class="menu__li" ><a id="sistemaSolar" href="sistemaSolar.html">Sistema Solar</a></li>
+                <li class="menu__li" ><a id="entrar" href="entrar.html">Entrar</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main -->
+    <main class="main__sistemaSolar">
+        <!-- secunda seção -->
+        <section class="second__section">
+            <h1 href="#">Sistema Solar</h1>
+
+            <div class="second__section__content">
+                <div class="planets__menu">
+                    <a href="#mercurymenu"><img class="mercury planetmenu" src="img/planetas/mercurio.png" alt="imagem planeta mercurio"><p class="p1">Mercúrio</p></a>
+                    <a href="#venusmenu"><img class="venus planetmenu" src="img/planetas/venus.png" alt="imagem planeta venus"><p class="p1">Venus</p></a>
+                    <a href="#earthmenu"><img class="earth planetmenu" src="img/planetas/terra.png" alt="imagem planeta terra"><p class="p1">Terra</p></a>
+                    <a href="#marsmenu"><img class="mars planetmenu" src="img/planetas/marte.png" alt="imagem planeta marte"><p class="p1">Marte</p></a>
+                </div>
+
+                <div class="solarSystem">
+                    <img id="sun" src="img/planetas/sun.png" alt="imagem sol">
+                
+                    <div class="mercury">
+                        <img id="mercury" src="img/planetas/mercurio.png" alt="imagem planeta mercurio">
+                    </div>
+                    <div class="venus">
+                        <img id="venus" src="img/planetas/venus.png" alt="imagem planeta venus">
+                    </div>
+                    <div class="earth">
+                        <img id="earth" src="img/planetas/terra.png" alt="imagem planeta terra">
+                    </div>
+                    <div class="mars">
+                        <img id="mars" src="img/planetas/marte.png" alt="imagem planeta marte">
+                    </div>
+                    <div class="jupiter">
+                        <img id="jupiter" src="img/planetas/jupiter.png" alt="imagem planeta jupiter">
+                    </div>
+                    <div class="saturn">
+                        <img id="saturn" src="img/planetas/saturno.png" alt="imagem planeta saturno">
+                    </div>
+                    <div class="uranus">
+                        <img id="uranus" src="img/planetas/urano.png" alt="imagem planeta urano">
+                    </div>
+                    <div class="neptune">
+                        <img id="neptune" src="img/planetas/netuno.png" alt="imagem planeta netuno">
+                    </div>
+                </div>
+
+                <div class="planets__menu">
+                    <a href="#jupitermenu"><p class="p2">Jupiter</p><img class="jupiter planetmenu" src="img/planetas/jupiter.png" alt="imagem planeta jupiter"></a>
+                    <a href="#saturnmenu"><p class="p2">Saturno</p><img class="saturn planetmenu" src="img/planetas/saturno.png" alt="imagem planeta saturno"></a>
+                    <a href="#uranusmenu"><p class="p2">Urano</p><img class="uranus planetmenu" src="img/planetas/urano.png" alt="imagem planeta urano"></a>
+                    <a href="#neptunemenu"><p class="p2">Netuno</p><img class="neptune planetmenu" src="img/planetas/netuno.png" alt="imagem planeta netuno"></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="planets__section">
+
+            <h1 class="title mercury">Mercúrio</h1>
+            <div class="planets__section__information" id="mercurymenu">
+                <img src="img/planetas/mercurio.png" alt="">
+                
+                <p>Mercúrio é o primeiro planeta do sistema solar, a contar a partir da proximidade com o Sol,
+                    distando-se em apenas 57,9 milhões de quilômetros da estrela em média. Com um diâmetro de 4878 km,
+                    é o menor entre os planetas do nosso sistema solar e também o que realiza mais rapidamente o seu movimento
+                    de translação, executado a uma velocidade de aproximadamente 47,87 km/s, levando, assim, 88 dias para
+                    completar sua volta ao redor do sol. 
+                    <br>
+                    Quanto ao movimento de rotação, o planeta Mercúrio executa-o apenas três vezes durante duas órbitas de
+                    translação, o que faz com que o seu dia solar seja o equivalente a 173 dias terrestres. Além disso,
+                    esse movimento de rotação acontece com o seu eixo perpendicular ao plano da órbita, por isso, Mercúrio
+                    não apresenta estações do ano e alguns locais não recebem a luz do sol.
+                    <br><br>
+                    A atmosfera de Mercúrio é basicamente composta por átomos de árgon, néon e hélio e apresenta uma pressão
+                    muito baixa, cerca de um bilhão de vezes menor do que a da Terra ao nível do mar. As altas temperaturas,
+                    em razão da proximidade com o sol, fazem com que esses átomos se dispersem pelo espaço, o que tem como
+                    consequências: o pequeno índice de erosão hídrica e eólica; a baixa proteção da atmosfera frente a
+                    meteoritos e a incapacidade de se conservar as médias térmicas. Por conta desse último fator, as
+                    temperaturas no planeta Mercúrio variam entre 430ºC e -170ºC durante a noite.
+                    <br><br>
+                    A superfície de Mercúrio é relativamente semelhante à da Lua, com uma grande quantidade de crateras 
+                    formadas pelo impacto dos meteoritos que atingiram o planeta. A ausência de agentes erosivos de 
+                    transformação do relevo faz com que essas crateras permaneçam conservadas durante muito tempo. A maior 
+                    delas é a Bacia Caloris, formada há milhares de anos e com um diâmetro de 1550 km de extensão.
+                    O planeta Mercúrio recebe esse nome em virtude do seu acelerado movimento de translação, o que faz com 
+                    que ele se mova mais rapidamente no céu do que os demais corpos celestes visíveis. Na mitologia romana, 
+                    Mercúrio era o mensageiro dos deuses por ser o mais rápido entre todos os seres do mundo.
+                    Graças à sua proximidade com o sol, é muito difícil observar Mercúrio, o que só é possível próximo ao 
+                    nascer do sol e logo após o entardecer. A maioria das informações é proveniente da sonda Mariner 10, 
+                    enviada em 1973, e da sonda Messenger, enviada pela Agência Espacial Americana (NASA) em 2008. 
+                    Recentemente, foi lançada pela Agência Espacial Europeia (ESA) e pela Agência Japonesa de Exploração 
+                    Aerospacial (JAXA) a sonda Bepicolombo, que concluirá o mapeamento da superfície do planeta e 
+                    fornecerá novos dados e informações.</p>
+            </div>
+
+            <h1 class="title venus">Venus</h1>
+            <div class="planets__section__information" id="venusmenu">
+                <p>Vênus é um planeta do sistema solar, localiza-se no segundo lugar a partir do sol, além disso, é o sexto maior entre todos os outros planetas.
+                    Vênus possui tamanho e massa semelhante a do planeta Terra, por isso os planetas citados eram considerados gêmeos, no entanto, as características parecidas se limitam à proporção corporal. Salvo esse ponto apresentado, os dois planetas são totalmente distintos, uma vez que Vênus não oferece condições para proliferação de vida.
+                    <br><br>
+                    Em Vênus a atmosfera é muito compacta, formada por uma enorme quantidade de gás carbônico, por ser muito densa desenvolve um elevado efeito estufa que faz o planeta produzir altíssimas temperaturas. Onde os raios solares incidem de forma perpendicular na superfície do planeta as temperaturas atingem até 460ºC.
+                    Outra particularidade do planeta Vênus é quanto aos movimentos de rotação e translação. Para a realização total do primeiro movimento são necessários 243 dias (referente aos dias terrestres) e no segundo, 224 dias, dessa forma um ano em Vênus é menor que 1 dia.
+                    <br><br>
+                    O planeta em questão já recebeu diversos nomes, como Lúcifer e Vésper, no Brasil é conhecido como Estrela Dalva. O planeta emite grande luz, diante desse fator é superado somente pela lua, por isso pode ser visualizado a olho nu.
+                </p>
+                    <img src="img/planetas/venus.png" alt="">
+            </div>
+
+            <h1 class="title earth">Terra</h1>
+            <div class="planets__section__information" id="earthmenu">
+                <img src="img/planetas/terra.png" alt="">
+                <p>Estima-se que nosso planeta tenha sido formado há, mais ou menos, 4,6 bilhões de anos. De lá pra cá, a Terra passou por constantes mudanças, algumas nítidas, outras bem longas e que os seres humanos não percebem. Tais mudanças podem ocorrer de fatores internos, como a energia do núcleo, ou fatores externos, como chuvas, processos erosivos, ação humana.
+                    A formação do Sistema Solar foi resultado de um colapso entre grandes estrelas, o que gerou uma grande junção de energia. Essa energia, posteriormente, formou os componentes do sistema, como o Sol e demais planetas.
+                    A Terra, há 4,6 bilhões de anos, era uma massa de matéria magmática que, ao longo de milhões de anos, resfriou-se. Esse resfriamento deu origem a uma camada rochosa, a camada litosférica. Esse período é chamado de Era Pré-cambriana.
+                    <br><br>
+                    Os movimentos do planeta, como a rotação (em torno de si) e a translação (ao redor do Sol), possibilitaram uma forma esférica da Terra, que é achatada nos polos. Essa forma recebe o nome de geoide. Seu interior é algo inóspito, e, até pouco tempo atrás, desconhecido.
+                    Com o desenvolvimento da tecnologia, a medição dos abalos sísmicos tornou possível conhecer o interior do planeta. As ondas sísmicas provocadas por esses abalos atravessam grandes regiões, podendo ser rastreadas e fornecer informações valiosas sobre a estrutura interna da Terra. Seu interior ainda possui a camada magmática de bilhões de anos atrás. A cada 33 m de profundidade, estima-se que a temperatura suba 1 ºC.
+                    Na superfície terrestre, camada em que vivemos, podemos encontrar diversos minerais utilizados no cotidiano. A crosta, como é conhecida a superfície, recobre todo o planeta, seja nos continentes (crosta continental), seja nos oceanos (crosta oceânica). No fundo dos mares e oceanos existe o assoalho oceânico, local em que compostos de silício e magnésio (sima) podem ser encontrados com frequência. Nos continentes, silício e alumínio (sial) dão consistência a quase toda essa superfície.
+                    <br><br>
+                    Na órbita da Terra, nosso planeta realiza dois movimentos cruciais para o desenvolvimento da vida: a translação e a rotação.
+                    Rotação é o movimento realizado pelo planeta em torno do seu próprio eixo, sendo uma volta em torno de si. Esse movimento, realizado no sentido anti-horário, ou seja, de oeste para leste, tem como consequência direta a existência de dias e noites. Além disso, o Sol é visto primeiro na parte leste do mundo, por isso o Japão é conhecido como “a terra do Sol nascente”. Esse movimento dura, em média, 23 h 56 min ou 24 h (o dia solar).
+                    Translação é o movimento realizado em torno do Sol. Uma translação completa significa um ano para a sociedade, pois esse movimento tem a duração de 365 dias e 6 h. Devido a isso, a cada quatro anos, um dia é colocado a mais no mês de fevereiro, surgindo o ano bissexto, com 366 dias.
+                    Os dois movimentos são feitos simultaneamente, ao mesmo tempo. Por conta da força da gravidade e do imenso peso do planeta, eles não são percebidos. No entanto, os dias e as noites (rotação) e a existência das estações do ano (translação) mostram-nos quão viva é a Terra. Se quiser saber mais sobre esses movimentos, acesse: Movimentos da Terra.
+                </p>
+            </div>
+
+            <h1 class="title mars">Marte</h1>
+            <div class="planets__section__information" id="marsmenu">
+                <p>
+                    Conforme a União Astronômica Internacional (AIU), órgão responsável pela classificação dos corpos celestes, o sistema solar é composto por oito planetas: Mercúrio, Vênus, Terra, Marte, Júpiter, Saturno, Urano e Netuno. Esses planetas apresentam algumas características em comum, no entanto, cada um possui peculiaridades.
+                    Marte, por exemplo, é chamado de planeta vermelho, em virtude da grande concentração de óxido de ferro no solo. Ele é o quarto planeta do sistema solar, tendo o Sol como ponto de partida. Sua distância para o Sol é de aproximadamente 228 milhões de quilômetros, fato que justifica a baixa temperatura média registrada nesse planeta (-60 °C).
+                    <br><br>
+                    Com essa temperatura, não há possibilidade de existir água no estado líquido. Entretanto, imagens registradas em 2001 pela sonda Mars Global Surveyor mostraram marcas de erosão no planeta, provavelmente provocadas pelo escoamento de água no estado líquido.
+                    O diâmetro de Marte é de 6.794 quilômetros, quase metade do diâmetro da Terra. A atmosfera, muito rarefeita, é composta por gás carbônico, dióxido de carbono, nitrogênio, argônio, néon e oxigênio. Esse planeta possui dois satélites (luas: Phobos e Deimos) e é visível a olho nu durante a noite.
+                    O movimento de rotação, ou seja, deslocamento em torno de seu próprio eixo, é realizado em 24 horas e 37 minutos, portanto um dia em Marte tem duração de 24 horas e 37 minutos. O movimento de translação (deslocamento em torno do Sol) é finalizado após 687 dias terrestres, portanto um ano nesse planeta é equivalente a cerca de 1 ano e 11 meses na Terra.
+                </p>
+                <img src="img/planetas/marte.png" alt="">
+            </div>
+
+            <h1 class="title jupiter">Jupiter</h1>
+            <div class="planets__section__information" id="jupitermenu">
+                <img src="img/planetas/jupiter.png" alt="">
+                <p>
+                    Quinto planeta a partir do Sol, situado entre Marte e Saturno, Júpiter é o maior planeta do sistema solar, com diâmetro de 142.984 quilômetros – caberiam mil planetas como a Terra em Júpiter. Sua atmosfera é composta principalmente de hidrogênio e hélio.
+                    A distância de Júpiter para o Sol é de aproximadamente 779 milhões de quilômetros. A temperatura média desse gigante corpo celeste é de -110 °C. Uma das características marcantes de Júpiter é a Grande Mancha Vermelha, considerada uma tempestade anticiclônica.
+                    <br><br>
+                    Esse corpo celeste é visível a olho nu, sendo considerado o quarto objeto mais brilhante do céu, atrás apenas do Sol, da Lua e de Vênus. Assim como Saturno, Júpiter também possui um sistema de anel em sua estrutura, contudo, bem menos nítido que o de Saturno.
+                    Galileu Galilei, no início do século XVII, foi o primeiro a analisar esse planeta através de um telescópio. Ele foi responsável pela identificação dos quatro maiores satélites naturais de Júpiter: Io, Europa, Ganimedes e Calisto. O avanço tecnológico permitiu a obtenção de maiores informações e, atualmente, são conhecidos 63 satélites naturais desse planeta.
+                    O movimento de rotação (deslocamento em torno do próprio eixo) é realizado em um tempo equivalente a dez horas terrestres, portanto um dia nesse planeta tem duração de dez horas na Terra. O movimento de translação (deslocamento em torno do Sol) é finalizado em 12 anos terrestres, portanto um ano em Júpiter é equivalente a 12 anos na Terra.
+                </p>
+            </div>
+
+            <h1 class="title saturn">Saturno</h1>
+            <div class="planets__section__information" id="saturnmenu">
+                <p>
+                    Saturno é o sexto planeta do Sistema Solar — contando-se a partir da distância do sol —, sendo mais conhecido pelos anéis que o circundam. Trata-se do segundo maior planeta desse sistema, atrás apenas de Júpiter, apresentando um diâmetro de 120 536 km, que é cerca de nove vezes maior que o diâmetro equatorial terrestre.
+                    O movimento de rotação do planeta Saturno é bastante acelerado, o que reverbera no achatamento de seus polos. No total, o planeta leva cerca de 10 horas e 39 minutos para completar uma volta em torno de si mesmo, enquanto o seu movimento de translação leva cerca de 29 anos, 167 dias e 6 horas terrestres para completar-se.
+                    Os anéis de Saturno são formados por vários pequenos anéis separados entre si por algumas fendas, sendo a mais notável delas a Divisão de Cassini, que separa os anéis A e B. A origem desses anéis ainda não foi totalmente provada, havendo várias teorias. É bem possível que eles sejam originários de partículas de luas do planeta que foram atingidas por asteroides e destruídas. A composição desses anéis também não é totalmente conhecida, mas são predominantemente formados por partículas de rochas e gelo.
+                    <br><br>
+                    Saturno, como sabemos, é um planeta gasoso, sendo basicamente composto de hidrogênio. Ele possui a peculiaridade de ser menos denso do que a água, ou seja, se fosse possível “mergulhá-lo” em uma bacia d'água, ele flutuaria! Na superfície do planeta, os ventos movem-se muito rapidamente e podem alcançar incríveis 1800 km/h, o que seria quatro vezes mais rápido do que a maioria dos furacões aqui da Terra.
+                </p>
+                <img id="saturno__information__img" src="img/planetas/saturno.png" alt="">
+            </div>
+
+            <h1 class="title uranus">Urano</h1>
+            <div class="planets__section__information" id="uranusmenu">
+                <img src="img/planetas/urano.png" alt="">
+                <p>
+                    Urano é um dos quatro planetas gasosos do Sistema Solar. Ele é o terceiro maior planeta desse sistema e apresenta uma composição de gases como o hidrogênio e o hélio.
+                    O planeta Urano foi identificado em 1781, pelo pesquisador alemão William Herschel (1738-1822). É um planeta ainda pouco explorado, em razão da sua distância em relação à Terra e também das dificuldades técnicas de exploração de sua superfície.
+                    Assim como os demais planetas gasosos, Urano é conhecido por seus anéis, que circundam sua superfície, tendo um total de 13 anéis. Ele também possui diversas luas. Delas, 27 já foram identificadas. Uma curiosidade sobre Urano é o seu movimento de translação que dura 84 anos.
+                    <br><br>
+                    Urano é um planeta gasoso localizado na sétima posição em relação ao Sol, logo após Saturno e anterior a Netuno. É o terceiro maior planeta do Sistema Solar e sua massa é formada por gases, principalmente hidrogênio e hélio. A sua nomenclatura homenageia o deus Urano da mitologia grega, que representava a personificação do céu. O planeta Urano é o único do Sistema Solar que recebeu um nome mitológico de origem grega, sendo os demais nomes dos planetas oriundos de deuses romanos.
+                    O planeta Urano tem a atmosfera mais fria do Sistema Solar, sendo caracterizada pelas baixas temperaturas que podem chegar a quase 200°C negativos. Ele é conhecido por sua coloração azulada. A movimentação de Urano, diferentemente de outros planetas do Sistema Solar, ocorre de leste para o oeste. Sendo assim, o Sol em Urano nasce no oeste e se põe no leste, movimento contrário ao realizado pelo planeta Terra, por exemplo.
+                </p>
+            </div>
+
+            <h1 class="title neptune">Netuno</h1>
+            <div class="planets__section__information" id="neptunemenu">
+                <p>
+                    O planeta Netuno é um dos oito planetas que compõem o Sistema Solar. Ele é classificado como planeta gasoso em razão da sua composição atmosférica formada basicamente por gases. Há em Netuno 14 satélites naturais, ou seja, luas, que o orbitam. Além das luas, há cinco grandes anéis no referido planeta. Pelo fato de Netuno ser o planeta mais distante do Sol, apresenta grande distância com relação aos corpos celestes mais estudados pela ciência.
+                    O planeta Netuno integra o conjunto de oito planetas do Sistema Solar. Esse planeta, classificado como gasoso, em razão da sua composição atmosférica basicamente formada por gases, é o oitavo em posicionamento a partir do Sol. Portanto, é o planeta mais distante da estrela solar.
+                    O planeta Netuno possui características como as baixíssimas temperaturas, a composição por gases diversos, o registro de fortes ventos, e, ainda, a ocorrência de um clima muito adverso, que, até onde se sabe, não permite a sobrevivência de nenhuma forma de vida.
+                    <br><br>
+                    Atualmente, há um conjunto de 14 satélites naturais conhecidos do planeta Netuno, que são chamados de luas. Esses satélites estão dividido em dois grandes grupos, regulares e irregulares, em razão das suas características físicas e astronômicas. A maior parte das luas de Netuno possui características muito próximas às desse planeta, especialmente em relação a sua composição, formada basicamente por gases.
+                    Ademais, elas possuem formas de orbitação diferentes entre si, com órbitas elípticas, excêntricas e até mesmo retrógradas. Porém ainda são necessários maiores estudos para o melhor conhecimento de todas as luas de Netuno.
+                </p>
+                <img src="img/planetas/netuno.png" alt="">
+            </div>
+
+
+        </section>
+    </main>
+    <!-- main fim -->
+
+    <footer class="footer">
+        <div class="footer__logo" href="home.html">
+            Apollo <span>&copy; 2023</span>
+        </div>
+
+        <nav class="footer__content">
+            <ul>
+                <a href="">
+                    <li>Facebook</li>
+                </a>
+                <a href="">
+                    <li>Instagram</li>
+                </a>
+                <a href="home.html">
+                    <li>Home</li>
+                </a>
+                <a href="noticias.html">
+                    <li>Notícias</li>
+                </a>
+                <a href="sistemaSolar.html">
+                    <li>Sistema solar</li>
+                </a>
+                <a href="entrar.html">
+                    <li>Entrar</li>
+                </a>
+            </ul>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
