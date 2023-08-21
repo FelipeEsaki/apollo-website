@@ -231,7 +231,499 @@
 }
 
 
+// large devices
+@media (max-width: 1200px) {
 
+    .header__sistemaSolar {
+        @include header-large;
+        z-index: 999;
+    }
+    
+    .main__sistemaSolar {
+        @include main-mobile;
+        height: 100%;
+        max-width: 100vw;
+    
+        .second__section {
+    
+            h1 {
+                @include h1-text-mobile;
+                text-transform: uppercase;
+                border-bottom: 1px solid #fff;
+                margin-bottom: 50px;
+                margin: 0 40px;
+            }
+            .second__section__content {
+                margin: 40px auto;
+                width: 90vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+    
+                .planets__menu {
+                    padding: 0 10px;
+                    width: 100%; 
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+                    gap: 30px;
+                    align-items: center;
+                    margin: 0 auto;
+        
+                a {
+                    width: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    letter-spacing: 3px;
+                    
+                    .p1 {
+                        @include general-text (.7rem, 400, #fff);
+                        position: relative;
+    
+                        &::before {
+                            display: none;
+                            position: absolute;
+                            left: -15px;
+                            top: 8px;
+                            content: '';
+                            width: 10px;
+                            height: 1px;
+                            background-color: #fff;
+                        }
+                    }
+    
+                    .p2 {
+                        @include general-text (.7rem, 400, #fff);
+                        position: relative;
+    
+                        &::before {
+                            display: none;
+                            position: absolute;
+                            right: -35px;
+                            top: 12px;
+                            content: '';
+                            width: 30px;
+                            height: 1px;
+                            background-color: #fff;
+                        }
+                    }
+                }
+    
+                .planetmenu {
+                    z-index: 998;
+                    width: 60%;
+                    transition: 1s;
+    
+                    &:hover {
+                        transform: scale(1) rotate(0);
+                    }
+                }
+    
+                    .mercury {
+                        width: 40%;
+                    }
+                    .jupiter {
+                        width: 80%;
+                    }
+                    .saturn {
+                        width: 160%;
+                    }
+                    .uranus {
+                        width: 60%;
+                    }
+                    .neptune {
+                        width: 60%;
+                    }
+                    
+                }
+            }
+            
+            .solarSystem {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                visibility: visible;
+    
+                #sun {
+                    position: absolute;
+                    width: 130px;
+                    height: 130px;
+                    animation: sun 5s linear infinite;
+                }
+    
+                // planets
+                .mercury {
+                    @include orbit__solar__system (25%, 25%);
+    
+                    #mercury {
+                        width: 5%;
+                        animation: mercury-mobile 2s linear infinite;
+                    }
+                }
+    
+                .venus {
+                    @include orbit__solar__system (32%, 32%);
+    
+                    #venus {
+                        width: 5%;
+                        animation: venus-mobile 4s linear infinite;
+                    }
+                }
+    
+                .earth {
+                    @include orbit__solar__system (39%, 39%);
+                    
+                    #earth {
+                        width: 6%;
+                        animation: earth-mobile 6s linear infinite;
+                        position: relative;
+                        z-index: 1;
+                    }
+                
+                }
+    
+                .mars {
+                    @include orbit__solar__system (46%, 46%);
+    
+                    #mars {
+                        width: 5%;
+                        animation: mars-mobile 8s linear infinite;
+                    }
+                }
+    
+                .jupiter {
+                    @include orbit__solar__system (53%, 53%);
+    
+                    #jupiter {
+                        width: 10%;
+                        animation: jupiter-mobile 10s linear infinite;
+                    }
+                }
+    
+                .saturn {
+                    @include orbit__solar__system (60%, 60%);
+    
+                    #saturn {
+                        width: 18%;
+                        animation: saturn-mobile 14s linear infinite;
+                    }
+                }
+                
+                .uranus {
+                    @include orbit__solar__system (67%, 67%);
+    
+                    #uranus {
+                        width: 4%;
+                        animation: uranus-mobile 20s linear infinite;
+                    }
+                }
+    
+                .neptune {
+                    @include orbit__solar__system (74%, 74%);
+    
+                    #neptune {
+                        width: 4%;
+                        animation: neptune-mobile 25s linear infinite;
+                    }
+                }
+            }
+        }
+    
+        .planets__section {
+            
+            margin: 0 40px;
+            @include general-text (1rem, 300, #fff);
+    
+            .title {
+                @include h1-text-mobile;
+                border-bottom: 1px solid #fff;
+                margin: 40px 0;
+                margin-bottom: 0;
+            }
+            
+            .planets__section__information {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+    
+                p {
+                    order: 2;
+                    margin: 30px 0;
+                    width: 100%;
+                }
+    
+                img {
+                    width: 8%;
+                    order: 1;
+                    margin-top: 30px;
+                }
+
+                #saturno__information__img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+
+
+// medium devices
+@media (max-width: 768px) {
+
+    .header__sistemaSolar {
+        @include header-mobile;
+        z-index: 999;
+    }
+    
+    .main__sistemaSolar {
+        @include main-mobile;
+        height: 100%;
+        max-width: 100vw;
+    
+        .second__section {
+    
+            h1 {
+                @include h1-text-mobile;
+                text-transform: uppercase;
+                border-bottom: 1px solid #fff;
+                margin-bottom: 50px;
+                margin: 0 40px;
+            }
+            .second__section__content {
+                margin: 40px auto;
+                width: 90vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+    
+                .planets__menu {
+                    padding: 0 10px;
+                    width: 100%; 
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 30px;
+                    align-items: center;
+                    margin: 0 auto;
+        
+                a {
+                    width: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    letter-spacing: 3px;
+                    
+                    .p1 {
+                        @include general-text (.7rem, 400, #fff);
+                        position: relative;
+    
+                        &::before {
+                            display: none;
+                            position: absolute;
+                            left: -15px;
+                            top: 8px;
+                            content: '';
+                            width: 10px;
+                            height: 1px;
+                            background-color: #fff;
+                        }
+                    }
+    
+                    .p2 {
+                        @include general-text (.7rem, 400, #fff);
+                        position: relative;
+    
+                        &::before {
+                            display: none;
+                            position: absolute;
+                            right: -35px;
+                            top: 12px;
+                            content: '';
+                            width: 30px;
+                            height: 1px;
+                            background-color: #fff;
+                        }
+                    }
+                }
+    
+                .planetmenu {
+                    z-index: 998;
+                    width: 60%;
+                    transition: 1s;
+    
+                    &:hover {
+                        transform: scale(1) rotate(0);
+                    }
+                }
+    
+                    .mercury {
+                        width: 40%;
+                    }
+                    .jupiter {
+                        width: 80%;
+                    }
+                    .saturn {
+                        width: 160%;
+                    }
+                    .uranus {
+                        width: 60%;
+                    }
+                    .neptune {
+                        width: 60%;
+                    }
+                    
+                }
+            }
+            
+            .solarSystem {
+                width: 400px;
+                height: 400px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                visibility: visible;
+    
+                #sun {
+                    position: absolute;
+                    width: 130px;
+                    height: 130px;
+                    animation: sun 5s linear infinite;
+                }
+    
+                // planets
+                .mercury {
+                    @include orbit__solar__system (25%, 25%);
+    
+                    #mercury {
+                        width: 5%;
+                        animation: mercury-mobile 2s linear infinite;
+                    }
+                }
+    
+                .venus {
+                    @include orbit__solar__system (32%, 32%);
+    
+                    #venus {
+                        width: 5%;
+                        animation: venus-mobile 4s linear infinite;
+                    }
+                }
+    
+                .earth {
+                    @include orbit__solar__system (39%, 39%);
+                    
+                    #earth {
+                        width: 6%;
+                        animation: earth-mobile 6s linear infinite;
+                        position: relative;
+                        z-index: 1;
+                    }
+                
+                }
+    
+                .mars {
+                    @include orbit__solar__system (46%, 46%);
+    
+                    #mars {
+                        width: 5%;
+                        animation: mars-mobile 8s linear infinite;
+                    }
+                }
+    
+                .jupiter {
+                    @include orbit__solar__system (53%, 53%);
+    
+                    #jupiter {
+                        width: 10%;
+                        animation: jupiter-mobile 10s linear infinite;
+                    }
+                }
+    
+                .saturn {
+                    @include orbit__solar__system (60%, 60%);
+    
+                    #saturn {
+                        width: 18%;
+                        animation: saturn-mobile 14s linear infinite;
+                    }
+                }
+                
+                .uranus {
+                    @include orbit__solar__system (67%, 67%);
+    
+                    #uranus {
+                        width: 4%;
+                        animation: uranus-mobile 20s linear infinite;
+                    }
+                }
+    
+                .neptune {
+                    @include orbit__solar__system (74%, 74%);
+    
+                    #neptune {
+                        width: 4%;
+                        animation: neptune-mobile 25s linear infinite;
+                    }
+                }
+            }
+        }
+    
+        .planets__section {
+            
+            margin: 0 40px;
+            @include general-text (1rem, 300, #fff);
+    
+            .title {
+                @include h1-text-mobile;
+                border-bottom: 1px solid #fff;
+                margin: 40px 0;
+                margin-bottom: 0;
+            }
+            
+            .planets__section__information {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+    
+                p {
+                    order: 2;
+                    margin: 30px 0;
+                    width: 100%;
+                }
+    
+                img {
+                    width: 15%;
+                    order: 1;
+                    margin-top: 30px;
+                }
+
+                #saturno__information__img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
 
 
 // mobile...
@@ -478,5 +970,4 @@
             }
         }
     }
-    
 }

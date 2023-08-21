@@ -386,3 +386,122 @@
     color: #fff;
     letter-spacing: 3px;
 }
+
+
+// large devices header...
+@mixin header-large {
+    z-index: 999;
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom, #000, transparent);
+
+    border-radius: 20px;
+    background: rgba(255,255,255, 0.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(255,255,255, 0.1);
+    border-radius: 0 0 30px 30px;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+
+    #menu {
+        display: none;
+        width: 100vw;
+        height: 50vh;
+
+        .menu__ul {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            .menu__li {
+                list-style: none;
+
+                a {
+                    @include general-text(1.6rem, 300, #fff);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .header__all {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        #logo {
+            @include general-text (3rem, normal, #fff);
+
+            margin-left: 40px;
+            text-shadow: 0 0 5px #fff;
+            text-decoration: none;
+            font-family: 'nasa', serif;
+        }
+
+        i {
+            display: none;
+        }
+
+        .menu {
+            display: none;
+        }
+
+        nav {
+            width: 100%;
+
+            ul {
+                margin: 0 40px;
+                display: flex;
+                list-style: none;
+                align-items: center;
+                justify-content: flex-end;
+                gap: 50px;
+                text-align: center;
+
+                li {
+                    a{
+                        @include general-text (1rem, 300, #fff);
+                        letter-spacing: 6px;
+                        text-shadow: 0 0 5px #fff;
+                        text-decoration: none;
+                    }
+
+                    #home {
+                        padding-left: 6px;
+
+                        &:hover {
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                    #noticias {
+                        padding-left: 6px;
+                        
+                        &:hover {
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                    #sistemaSolar {
+                        padding-left: 6px;
+
+                        &:hover {
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                    #entrar {
+                        padding-left: 6px;
+
+                        &:hover {
+                            border-bottom: 1px solid #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

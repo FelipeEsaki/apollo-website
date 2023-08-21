@@ -479,6 +479,159 @@ body .first__page .stars:nth-child(7) {
   height: 10px;
 }
 
+@media (max-width: 768px) {
+  body {
+    max-height: 100vh;
+  }
+  body .first__page {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url(img/bg2.jpg);
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  body .first__page .blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #01042c, transparent);
+    z-index: 1;
+  }
+  body .first__page .content {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: effect1 30s ease-in-out 0s infinite normal forwards;
+  }
+  body .first__page .content h2 {
+    letter-spacing: 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .first__page .content #arrow {
+    width: 50px;
+    color: #fff;
+    animation: effect1 15s ease-in-out 0s infinite reverse forwards;
+  }
+  body .first__page .content h1 {
+    z-index: 3;
+    text-shadow: 0 0 12px #fff;
+  }
+  body .first__page .content h1 a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 7rem;
+    font-weight: normal;
+    color: #fff;
+    font-family: "nasa", serif;
+  }
+  body .first__page .content h1 a::before {
+    content: "";
+    position: absolute;
+    margin-left: 163px;
+    margin-top: 32px;
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    background-image: url(img/planetas/moon.png);
+    background-size: cover;
+    animation: moon 15s linear infinite;
+  }
+  body .first__page .content p {
+    margin-top: 50px;
+    z-index: 3;
+    letter-spacing: 3px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .first__page .stars {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    box-shadow: 0px 0px 10px 2px #fff;
+    animation: animate 5s linear infinite;
+  }
+  body .first__page .stars::before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, #fff, transparent);
+    position: absolute;
+    top: 50%;
+  }
+  body .first__page .stars:nth-child(1) {
+    top: -100px;
+    left: 1800px;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    width: 10px;
+    height: 10px;
+  }
+  body .first__page .stars:nth-child(2) {
+    top: -100px;
+    left: 1200px;
+    animation-duration: 2s;
+    animation-delay: 1s;
+  }
+  body .first__page .stars:nth-child(3) {
+    top: -500px;
+    left: 1500px;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    top: -500px;
+    left: 1500px;
+    animation-duration: 2s;
+    animation-delay: 4s;
+  }
+  body .first__page .stars:nth-child(4) {
+    top: -100px;
+    left: 2300px;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    width: 10px;
+    height: 10px;
+  }
+  body .first__page .stars:nth-child(5) {
+    top: -300px;
+    left: 1000px;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+  body .first__page .stars:nth-child(6) {
+    top: -100px;
+    left: 450px;
+    animation-duration: 4s;
+    animation-delay: 1s;
+  }
+  body .first__page .stars:nth-child(7) {
+    top: -100px;
+    left: 1700px;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    width: 10px;
+    height: 10px;
+  }
+}
 @media (max-width: 480px) {
   body {
     max-height: 100vh;
@@ -1382,6 +1535,1424 @@ body .main__home .second__section__content .solarSystem .neptune #neptune {
   letter-spacing: 3px;
 }
 
+@media (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  body .stars {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    box-shadow: 0px 0px 10px 2px #fff;
+    animation: animate 5s linear infinite;
+  }
+  body .stars::before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, #fff, transparent);
+    position: absolute;
+    top: 50%;
+  }
+  body .stars:nth-child(1) {
+    top: -100px;
+    left: 1800px;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    width: 10px;
+    height: 10px;
+  }
+  body .stars:nth-child(2) {
+    top: -100px;
+    left: 1200px;
+    animation-duration: 2s;
+    animation-delay: 1s;
+  }
+  body .stars:nth-child(3) {
+    top: -500px;
+    left: 1500px;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    top: -500px;
+    left: 1500px;
+    animation-duration: 2s;
+    animation-delay: 4s;
+  }
+  body .stars:nth-child(4) {
+    top: -100px;
+    left: 2300px;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    width: 10px;
+    height: 10px;
+  }
+  body .stars:nth-child(5) {
+    top: -300px;
+    left: 1000px;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+  body .stars:nth-child(6) {
+    top: -100px;
+    left: 450px;
+    animation-duration: 4s;
+    animation-delay: 1s;
+  }
+  body .stars:nth-child(7) {
+    top: -100px;
+    left: 1700px;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    width: 10px;
+    height: 10px;
+  }
+  body #nave {
+    position: fixed;
+    width: 10%;
+    bottom: 300px;
+    left: -1000px;
+    animation: nave 20s ease-in-out forwards infinite;
+  }
+  body .background {
+    width: 100vw;
+    height: 100%;
+    z-index: -2;
+    position: fixed;
+    animation: background 30s alternate infinite ease-in-out;
+  }
+  body .header__home {
+    z-index: 999;
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom, #000, transparent);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 30px 30px;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  body .header__home #menu {
+    display: none;
+    width: 100vw;
+    height: 50vh;
+  }
+  body .header__home #menu .menu__ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body .header__home #menu .menu__ul .menu__li {
+    list-style: none;
+  }
+  body .header__home #menu .menu__ul .menu__li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+  }
+  body .header__home .header__all {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body .header__home .header__all #logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #fff;
+    margin-left: 40px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+    font-family: "nasa", serif;
+  }
+  body .header__home .header__all i {
+    display: none;
+  }
+  body .header__home .header__all .menu {
+    display: none;
+  }
+  body .header__home .header__all nav {
+    width: 100%;
+  }
+  body .header__home .header__all nav ul {
+    margin: 0 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    text-align: center;
+  }
+  body .header__home .header__all nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 6px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+  }
+  body .header__home .header__all nav ul li #home {
+    padding-left: 6px;
+  }
+  body .header__home .header__all nav ul li #home:hover {
+    border-bottom: 1px solid #fff;
+  }
+  body .header__home .header__all nav ul li #noticias {
+    padding-left: 6px;
+  }
+  body .header__home .header__all nav ul li #noticias:hover {
+    border-bottom: 1px solid #fff;
+  }
+  body .header__home .header__all nav ul li #sistemaSolar {
+    padding-left: 6px;
+  }
+  body .header__home .header__all nav ul li #sistemaSolar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  body .header__home .header__all nav ul li #entrar {
+    padding-left: 6px;
+  }
+  body .header__home .header__all nav ul li #entrar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  body .header__home #home {
+    border-bottom: 1px solid #fff;
+  }
+  body .main__home {
+    position: relative;
+    margin: 0 auto;
+    max-width: 90%;
+    overflow: hidden;
+  }
+  body .main__home .first__section {
+    margin: 40px 0;
+  }
+  body .main__home .first__section h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+  }
+  body .main__home .first__section .noticias__first {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "image3 image2" "image1 image2";
+  }
+  body .main__home .first__section .noticias__first img {
+    width: 100%;
+  }
+  body .main__home .first__section .noticias__first #image1 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image1;
+    position: relative;
+    background-image: url(img/noticias/buracos\ negros.jpg);
+  }
+  body .main__home .first__section .noticias__first #image1 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__first #image1 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section .noticias__first #image2 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image2;
+    position: relative;
+    background-image: url(img/noticias/foguete.jpg);
+  }
+  body .main__home .first__section .noticias__first #image2 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__first #image2 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section .noticias__first #image3 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image3;
+    position: relative;
+    background-image: url(img/noticias/galaxias.png);
+  }
+  body .main__home .first__section .noticias__first #image3 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__first #image3 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section .noticias__second {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "image4 image5" "image4 image6";
+  }
+  body .main__home .first__section .noticias__second img {
+    width: 100%;
+  }
+  body .main__home .first__section .noticias__second #image4 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image4;
+    position: relative;
+    background-image: url(img/noticias/saturno.jpg);
+  }
+  body .main__home .first__section .noticias__second #image4 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__second #image4 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section .noticias__second #image5 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image5;
+    position: relative;
+    background-image: url(img/noticias/telescopio.png);
+  }
+  body .main__home .first__section .noticias__second #image5 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__second #image5 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section .noticias__second #image6 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image6;
+    position: relative;
+    background-image: url(img/noticias/super\ lua.png);
+  }
+  body .main__home .first__section .noticias__second #image6 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__second #image6 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section #vermais {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 5px #fff;
+    display: block;
+    text-align: center;
+  }
+  body .main__home .first__section .arrow__div {
+    display: flex;
+    justify-content: center;
+  }
+  body .main__home .first__section .arrow__div #arrow {
+    width: 50px;
+    color: #fff;
+    animation: effect1 15s ease-in-out 0s infinite reverse forwards;
+  }
+  body .main__home .second__section {
+    position: relative;
+  }
+  body .main__home .second__section #titleSolarSystem {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 3px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+  }
+  body .main__home .second__section__content {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  body .main__home .second__section__content__pbtn {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main__home .second__section__content__pbtn p {
+    width: 90%;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 3px;
+    text-align: left;
+    line-height: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+    border-left: 5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    transition: 1s;
+    cursor: pointer;
+  }
+  body .main__home .second__section__content__pbtn p:hover {
+    transform: scale(1.1);
+  }
+  body .main__home .second__section__content__pbtn .btn {
+    order: 2;
+    position: relative;
+    width: 150px;
+    height: 60px;
+    margin: 50px 0;
+  }
+  body .main__home .second__section__content__pbtn .btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50%;
+    width: 30px;
+    height: 10px;
+    background: #fff;
+    box-shadow: 0 0 15px #fff, 0 0 30px #fff, 0 0 60px #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  body .main__home .second__section__content__pbtn .btn:hover::before {
+    bottom: 0;
+    width: 85%;
+    height: 100%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+  }
+  body .main__home .second__section__content__pbtn .btn a {
+    font-family: "nasa", serif;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  body .main__home .second__section__content__pbtn .btn a:hover {
+    transition-delay: 0.6s;
+    letter-spacing: 3px;
+    color: #aa7d00;
+  }
+  body .main__home .second__section__content__pbtn .btn a:hover::before {
+    transform: skewX(45deg) translateX(200%);
+  }
+  body .main__home .second__section__content__pbtn .btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+  }
+  body .main__home .second__section__content .solarSystem {
+    order: 1;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+  body .main__home .second__section__content .solarSystem #sun {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    animation: sun 5s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .mercury {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .mercury #mercury {
+    width: 5%;
+    animation: mercury-mobile 2s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .venus {
+    position: absolute;
+    width: 32%;
+    height: 32%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .venus #venus {
+    width: 5%;
+    animation: venus-mobile 4s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .earth {
+    position: absolute;
+    width: 39%;
+    height: 39%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .earth #earth {
+    width: 6%;
+    animation: earth-mobile 6s linear infinite;
+    position: relative;
+    z-index: 1;
+  }
+  body .main__home .second__section__content .solarSystem .mars {
+    position: absolute;
+    width: 46%;
+    height: 46%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .mars #mars {
+    width: 5%;
+    animation: mars-mobile 8s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .jupiter {
+    position: absolute;
+    width: 53%;
+    height: 53%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .jupiter #jupiter {
+    width: 10%;
+    animation: jupiter-mobile 10s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .saturn {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .saturn #saturn {
+    width: 18%;
+    animation: saturn-mobile 14s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .uranus {
+    position: absolute;
+    width: 67%;
+    height: 67%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .uranus #uranus {
+    width: 4%;
+    animation: uranus-mobile 20s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .neptune {
+    position: absolute;
+    width: 74%;
+    height: 74%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .neptune #neptune {
+    width: 4%;
+    animation: neptune-mobile 25s linear infinite;
+  }
+  .footer {
+    width: 100vw;
+    height: 100px;
+    background: linear-gradient(to top, #000, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .footer__logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+    font-family: "nasa", serif;
+  }
+  .footer__logo span {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .footer__content {
+    width: 100%;
+  }
+  .footer__content ul {
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer__content ul a {
+    text-decoration: none;
+  }
+  .footer__content ul a li {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+  body .stars {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    box-shadow: 0px 0px 10px 2px #fff;
+    animation: animate 5s linear infinite;
+  }
+  body .stars::before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    transform: translateY(-50%);
+    background: linear-gradient(to right, #fff, transparent);
+    position: absolute;
+    top: 50%;
+  }
+  body .stars:nth-child(1) {
+    top: -100px;
+    left: 1800px;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    width: 10px;
+    height: 10px;
+  }
+  body .stars:nth-child(2) {
+    top: -100px;
+    left: 1200px;
+    animation-duration: 2s;
+    animation-delay: 1s;
+  }
+  body .stars:nth-child(3) {
+    top: -500px;
+    left: 1500px;
+    animation-duration: 2s;
+    animation-delay: 4s;
+    top: -500px;
+    left: 1500px;
+    animation-duration: 2s;
+    animation-delay: 4s;
+  }
+  body .stars:nth-child(4) {
+    top: -100px;
+    left: 2300px;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    width: 10px;
+    height: 10px;
+  }
+  body .stars:nth-child(5) {
+    top: -300px;
+    left: 1000px;
+    animation-duration: 5s;
+    animation-delay: 1s;
+  }
+  body .stars:nth-child(6) {
+    top: -100px;
+    left: 450px;
+    animation-duration: 4s;
+    animation-delay: 1s;
+  }
+  body .stars:nth-child(7) {
+    top: -100px;
+    left: 1700px;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    width: 10px;
+    height: 10px;
+  }
+  body #nave {
+    position: fixed;
+    width: 10%;
+    bottom: 300px;
+    left: -1000px;
+    animation: nave 20s ease-in-out forwards infinite;
+  }
+  body .background {
+    width: 100vw;
+    height: 100%;
+    z-index: -2;
+    position: fixed;
+    animation: background 30s alternate infinite ease-in-out;
+  }
+  body .header__home {
+    z-index: 999;
+    padding: 30px 0;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom, #000, transparent);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 30px 30px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  body .header__home #menu {
+    display: none;
+    width: 100vw;
+    height: 50vh;
+  }
+  body .header__home #menu .menu__ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body .header__home #menu .menu__ul .menu__li {
+    list-style: none;
+  }
+  body .header__home #menu .menu__ul .menu__li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+  }
+  body .header__home .header__all {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  body .header__home .header__all .fa-solid {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+  }
+  body .header__home .header__all #logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+    font-family: "nasa", serif;
+  }
+  body .header__home .header__all nav {
+    width: 100%;
+    display: none;
+  }
+  body .header__home .header__all nav ul {
+    margin-left: 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    text-align: center;
+  }
+  body .header__home .header__all nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 6px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+  }
+  body .header__home .header__all nav ul li #home {
+    padding-left: 6px;
+  }
+  body .header__home .header__all nav ul li #noticias {
+    padding-left: 6px;
+  }
+  body .header__home .header__all nav ul li #noticias:hover {
+    border-bottom: 1px solid #fff;
+  }
+  body .header__home .header__all nav ul li #sistemaSolar {
+    padding-left: 6px;
+  }
+  body .header__home .header__all nav ul li #sistemaSolar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  body .header__home .header__all nav ul li #contato {
+    padding-left: 6px;
+  }
+  body .header__home .header__all nav ul li #contato:hover {
+    border-bottom: 1px solid #fff;
+  }
+  body .main__home {
+    position: relative;
+    margin: 0 auto;
+    max-width: 90%;
+    overflow: hidden;
+  }
+  body .main__home .first__section {
+    margin: 40px 0;
+  }
+  body .main__home .first__section h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+  }
+  body .main__home .first__section .noticias__first {
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "image3 image2" "image1 image2";
+  }
+  body .main__home .first__section .noticias__first img {
+    width: 100%;
+  }
+  body .main__home .first__section .noticias__first #image1 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image1;
+    position: relative;
+    background-image: url(img/noticias/buracos\ negros.jpg);
+  }
+  body .main__home .first__section .noticias__first #image1 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__first #image1 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section .noticias__first #image2 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image2;
+    position: relative;
+    background-image: url(img/noticias/foguete.jpg);
+  }
+  body .main__home .first__section .noticias__first #image2 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__first #image2 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section .noticias__first #image3 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image3;
+    position: relative;
+    background-image: url(img/noticias/galaxias.png);
+  }
+  body .main__home .first__section .noticias__first #image3 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__first #image3 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section .noticias__second {
+    margin-top: 20px;
+    width: 100%;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    grid-template-areas: "image4 image5" "image4 image6";
+  }
+  body .main__home .first__section .noticias__second img {
+    width: 100%;
+  }
+  body .main__home .first__section .noticias__second #image4 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image4;
+    position: relative;
+    background-image: url(img/noticias/saturno.jpg);
+  }
+  body .main__home .first__section .noticias__second #image4 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__second #image4 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section .noticias__second #image5 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image5;
+    position: relative;
+    background-image: url(img/noticias/telescopio.png);
+  }
+  body .main__home .first__section .noticias__second #image5 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__second #image5 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section .noticias__second #image6 {
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 20px;
+    grid-area: image6;
+    position: relative;
+    background-image: url(img/noticias/super\ lua.png);
+  }
+  body .main__home .first__section .noticias__second #image6 h3 {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 20px 20px;
+    transition: 1;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  body .main__home .first__section .noticias__second #image6 h3:hover {
+    background-color: rgb(0, 0, 0);
+  }
+  body .main__home .first__section #vermais {
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 5px #fff;
+    display: block;
+    text-align: center;
+  }
+  body .main__home .first__section .arrow__div {
+    display: flex;
+    justify-content: center;
+  }
+  body .main__home .first__section .arrow__div #arrow {
+    width: 50px;
+    color: #fff;
+    animation: effect1 15s ease-in-out 0s infinite reverse forwards;
+  }
+  body .main__home .second__section {
+    position: relative;
+  }
+  body .main__home .second__section #titleSolarSystem {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 3px;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+  }
+  body .main__home .second__section__content {
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  body .main__home .second__section__content__pbtn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .main__home .second__section__content__pbtn p {
+    width: 90%;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 3px;
+    text-align: left;
+    line-height: 25px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-bottom: 5px solid rgba(255, 255, 255, 0.1);
+    border-left: 5px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    transition: 1s;
+    cursor: pointer;
+  }
+  body .main__home .second__section__content__pbtn p:hover {
+    transform: scale(1.1);
+  }
+  body .main__home .second__section__content__pbtn .btn {
+    order: 2;
+    position: relative;
+    width: 150px;
+    height: 60px;
+    margin: 50px 0;
+  }
+  body .main__home .second__section__content__pbtn .btn::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50%;
+    width: 30px;
+    height: 10px;
+    background: #fff;
+    box-shadow: 0 0 15px #fff, 0 0 30px #fff, 0 0 60px #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    transition-delay: 0s;
+  }
+  body .main__home .second__section__content__pbtn .btn:hover::before {
+    bottom: 0;
+    width: 85%;
+    height: 100%;
+    border-radius: 30px;
+    transition-delay: 0.5s;
+  }
+  body .main__home .second__section__content__pbtn .btn a {
+    font-family: "nasa", serif;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: #fff;
+    z-index: 1;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+  }
+  body .main__home .second__section__content__pbtn .btn a:hover {
+    transition-delay: 0.6s;
+    letter-spacing: 3px;
+    color: #aa7d00;
+  }
+  body .main__home .second__section__content__pbtn .btn a:hover::before {
+    transform: skewX(45deg) translateX(200%);
+  }
+  body .main__home .second__section__content__pbtn .btn a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15), transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+  }
+  body .main__home .second__section__content .solarSystem {
+    order: 1;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+  }
+  body .main__home .second__section__content .solarSystem #sun {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    animation: sun 5s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .mercury {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .mercury #mercury {
+    width: 5%;
+    animation: mercury-mobile 2s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .venus {
+    position: absolute;
+    width: 32%;
+    height: 32%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .venus #venus {
+    width: 5%;
+    animation: venus-mobile 4s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .earth {
+    position: absolute;
+    width: 39%;
+    height: 39%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .earth #earth {
+    width: 6%;
+    animation: earth-mobile 6s linear infinite;
+    position: relative;
+    z-index: 1;
+  }
+  body .main__home .second__section__content .solarSystem .mars {
+    position: absolute;
+    width: 46%;
+    height: 46%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .mars #mars {
+    width: 5%;
+    animation: mars-mobile 8s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .jupiter {
+    position: absolute;
+    width: 53%;
+    height: 53%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .jupiter #jupiter {
+    width: 10%;
+    animation: jupiter-mobile 10s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .saturn {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .saturn #saturn {
+    width: 18%;
+    animation: saturn-mobile 14s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .uranus {
+    position: absolute;
+    width: 67%;
+    height: 67%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .uranus #uranus {
+    width: 4%;
+    animation: uranus-mobile 20s linear infinite;
+  }
+  body .main__home .second__section__content .solarSystem .neptune {
+    position: absolute;
+    width: 74%;
+    height: 74%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  body .main__home .second__section__content .solarSystem .neptune #neptune {
+    width: 4%;
+    animation: neptune-mobile 25s linear infinite;
+  }
+  .footer {
+    width: 100vw;
+    height: 100px;
+    background: linear-gradient(to top, #000, transparent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
+  .footer__logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+    font-family: "nasa", serif;
+  }
+  .footer__logo span {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .footer__content {
+    width: 100%;
+  }
+  .footer__content ul {
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  .footer__content ul a {
+    text-decoration: none;
+  }
+  .footer__content ul a li {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 2px;
+  }
+}
 @media (max-width: 480px) {
   body {
     overflow-x: hidden;
@@ -1595,6 +3166,7 @@ body .main__home .second__section__content .solarSystem .neptune #neptune {
   }
   body .main__home .first__section .noticias__first {
     width: 100%;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -2191,7 +3763,198 @@ body {
   color: #fff;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1200px) {
+  body {
+    background-image: url(img/background\ noticias.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    overflow-x: hidden;
+  }
+  .header__noticias {
+    z-index: 999;
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom, #000, transparent);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 30px 30px;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    z-index: 999;
+  }
+  .header__noticias #menu {
+    display: none;
+    width: 100vw;
+    height: 50vh;
+  }
+  .header__noticias #menu .menu__ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__noticias #menu .menu__ul .menu__li {
+    list-style: none;
+  }
+  .header__noticias #menu .menu__ul .menu__li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+  }
+  .header__noticias .header__all {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__noticias .header__all #logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #fff;
+    margin-left: 40px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+    font-family: "nasa", serif;
+  }
+  .header__noticias .header__all i {
+    display: none;
+  }
+  .header__noticias .header__all .menu {
+    display: none;
+  }
+  .header__noticias .header__all nav {
+    width: 100%;
+  }
+  .header__noticias .header__all nav ul {
+    margin: 0 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    text-align: center;
+  }
+  .header__noticias .header__all nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 6px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+  }
+  .header__noticias .header__all nav ul li #home {
+    padding-left: 6px;
+  }
+  .header__noticias .header__all nav ul li #home:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__noticias .header__all nav ul li #noticias {
+    padding-left: 6px;
+  }
+  .header__noticias .header__all nav ul li #noticias:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__noticias .header__all nav ul li #sistemaSolar {
+    padding-left: 6px;
+  }
+  .header__noticias .header__all nav ul li #sistemaSolar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__noticias .header__all nav ul li #entrar {
+    padding-left: 6px;
+  }
+  .header__noticias .header__all nav ul li #entrar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .main__noticias {
+    position: relative;
+    margin: 0 auto;
+    max-width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 150px;
+    display: flex;
+    gap: 10px;
+  }
+  .main__noticias .noticias__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+  }
+  .main__noticias .noticias {
+    margin: 40px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+  }
+  .main__noticias .noticias .noticia {
+    width: 180px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  .main__noticias .noticias .noticia__imagem {
+    grid-area: imagem;
+  }
+  .main__noticias .noticias .noticia__imagem img {
+    border-radius: 30px;
+    width: 100%;
+  }
+  .main__noticias .noticias .noticia a {
+    text-decoration: none;
+  }
+  .main__noticias .noticias .noticia__p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 3px;
+    grid-area: h2;
+  }
+  .main__noticias .noticias .noticia__h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 300;
+    color: #fff;
+    grid-area: h3;
+  }
+  .main__noticias .maisLidas {
+    width: 30%;
+    position: fixed;
+    top: 200px;
+    right: 100px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+}
+@media (max-width: 768px) {
   body {
     background-image: url(img/background\ noticias.jpg);
     background-size: cover;
@@ -2331,6 +4094,192 @@ body {
   }
   .main__noticias .noticias .noticia {
     width: 180px;
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+  }
+  .main__noticias .noticias .noticia__imagem {
+    grid-area: imagem;
+  }
+  .main__noticias .noticias .noticia__imagem img {
+    border-radius: 30px;
+    width: 100%;
+  }
+  .main__noticias .noticias .noticia a {
+    text-decoration: none;
+  }
+  .main__noticias .noticias .noticia__p {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 3px;
+    grid-area: h2;
+  }
+  .main__noticias .noticias .noticia__h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.6rem;
+    font-weight: 300;
+    color: #fff;
+    grid-area: h3;
+  }
+  .main__noticias .maisLidas {
+    width: 30%;
+    position: fixed;
+    top: 200px;
+    right: 100px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    background-image: url(img/background\ noticias.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50%;
+    overflow-x: hidden;
+  }
+  .header__noticias {
+    z-index: 999;
+    padding: 30px 0;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom, #000, transparent);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 30px 30px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    z-index: 999;
+  }
+  .header__noticias #menu {
+    display: none;
+    width: 100vw;
+    height: 50vh;
+  }
+  .header__noticias #menu .menu__ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__noticias #menu .menu__ul .menu__li {
+    list-style: none;
+  }
+  .header__noticias #menu .menu__ul .menu__li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+  }
+  .header__noticias .header__all {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__noticias .header__all .fa-solid {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+  }
+  .header__noticias .header__all #logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+    font-family: "nasa", serif;
+  }
+  .header__noticias .header__all nav {
+    width: 100%;
+    display: none;
+  }
+  .header__noticias .header__all nav ul {
+    margin-left: 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    text-align: center;
+  }
+  .header__noticias .header__all nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 6px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+  }
+  .header__noticias .header__all nav ul li #home {
+    padding-left: 6px;
+  }
+  .header__noticias .header__all nav ul li #noticias {
+    padding-left: 6px;
+  }
+  .header__noticias .header__all nav ul li #noticias:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__noticias .header__all nav ul li #sistemaSolar {
+    padding-left: 6px;
+  }
+  .header__noticias .header__all nav ul li #sistemaSolar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__noticias .header__all nav ul li #contato {
+    padding-left: 6px;
+  }
+  .header__noticias .header__all nav ul li #contato:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .main__noticias {
+    position: relative;
+    margin: 0 auto;
+    max-width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 150px;
+    display: flex;
+    gap: 10px;
+  }
+  .main__noticias .noticias__title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+  }
+  .main__noticias .noticias {
+    margin: 40px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
+  }
+  .main__noticias .noticias .noticia {
+    width: 160px;
     background: rgba(255, 255, 255, 0.03);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     border-radius: 30px;
@@ -2743,6 +4692,761 @@ body {
   width: 70%;
 }
 
+@media (max-width: 1200px) {
+  .header__sistemaSolar {
+    z-index: 999;
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom, #000, transparent);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 30px 30px;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    z-index: 999;
+  }
+  .header__sistemaSolar #menu {
+    display: none;
+    width: 100vw;
+    height: 50vh;
+  }
+  .header__sistemaSolar #menu .menu__ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__sistemaSolar #menu .menu__ul .menu__li {
+    list-style: none;
+  }
+  .header__sistemaSolar #menu .menu__ul .menu__li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+  }
+  .header__sistemaSolar .header__all {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__sistemaSolar .header__all #logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #fff;
+    margin-left: 40px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+    font-family: "nasa", serif;
+  }
+  .header__sistemaSolar .header__all i {
+    display: none;
+  }
+  .header__sistemaSolar .header__all .menu {
+    display: none;
+  }
+  .header__sistemaSolar .header__all nav {
+    width: 100%;
+  }
+  .header__sistemaSolar .header__all nav ul {
+    margin: 0 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    text-align: center;
+  }
+  .header__sistemaSolar .header__all nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 6px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+  }
+  .header__sistemaSolar .header__all nav ul li #home {
+    padding-left: 6px;
+  }
+  .header__sistemaSolar .header__all nav ul li #home:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__sistemaSolar .header__all nav ul li #noticias {
+    padding-left: 6px;
+  }
+  .header__sistemaSolar .header__all nav ul li #noticias:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__sistemaSolar .header__all nav ul li #sistemaSolar {
+    padding-left: 6px;
+  }
+  .header__sistemaSolar .header__all nav ul li #sistemaSolar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__sistemaSolar .header__all nav ul li #entrar {
+    padding-left: 6px;
+  }
+  .header__sistemaSolar .header__all nav ul li #entrar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .main__sistemaSolar {
+    position: relative;
+    margin: 0 auto;
+    max-width: 90%;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100vw;
+  }
+  .main__sistemaSolar .second__section h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    margin: 0 40px;
+  }
+  .main__sistemaSolar .second__section .second__section__content {
+    margin: 40px auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu a {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu a .p1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu a .p1::before {
+    display: none;
+    position: absolute;
+    left: -15px;
+    top: 8px;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #fff;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu a .p2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu a .p2::before {
+    display: none;
+    position: absolute;
+    right: -35px;
+    top: 12px;
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .planetmenu {
+    z-index: 998;
+    width: 60%;
+    transition: 1s;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .planetmenu:hover {
+    transform: scale(1) rotate(0);
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .mercury {
+    width: 40%;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .jupiter {
+    width: 80%;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .saturn {
+    width: 160%;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .uranus {
+    width: 60%;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .neptune {
+    width: 60%;
+  }
+  .main__sistemaSolar .second__section .solarSystem {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+  }
+  .main__sistemaSolar .second__section .solarSystem #sun {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    animation: sun 5s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .mercury {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .mercury #mercury {
+    width: 5%;
+    animation: mercury-mobile 2s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .venus {
+    position: absolute;
+    width: 32%;
+    height: 32%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .venus #venus {
+    width: 5%;
+    animation: venus-mobile 4s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .earth {
+    position: absolute;
+    width: 39%;
+    height: 39%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .earth #earth {
+    width: 6%;
+    animation: earth-mobile 6s linear infinite;
+    position: relative;
+    z-index: 1;
+  }
+  .main__sistemaSolar .second__section .solarSystem .mars {
+    position: absolute;
+    width: 46%;
+    height: 46%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .mars #mars {
+    width: 5%;
+    animation: mars-mobile 8s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .jupiter {
+    position: absolute;
+    width: 53%;
+    height: 53%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .jupiter #jupiter {
+    width: 10%;
+    animation: jupiter-mobile 10s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .saturn {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .saturn #saturn {
+    width: 18%;
+    animation: saturn-mobile 14s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .uranus {
+    position: absolute;
+    width: 67%;
+    height: 67%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .uranus #uranus {
+    width: 4%;
+    animation: uranus-mobile 20s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .neptune {
+    position: absolute;
+    width: 74%;
+    height: 74%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .neptune #neptune {
+    width: 4%;
+    animation: neptune-mobile 25s linear infinite;
+  }
+  .main__sistemaSolar .planets__section {
+    margin: 0 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .main__sistemaSolar .planets__section .title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #fff;
+    margin: 40px 0;
+    margin-bottom: 0;
+  }
+  .main__sistemaSolar .planets__section .planets__section__information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main__sistemaSolar .planets__section .planets__section__information p {
+    order: 2;
+    margin: 30px 0;
+    width: 100%;
+  }
+  .main__sistemaSolar .planets__section .planets__section__information img {
+    width: 8%;
+    order: 1;
+    margin-top: 30px;
+  }
+  .main__sistemaSolar .planets__section .planets__section__information #saturno__information__img {
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .header__sistemaSolar {
+    z-index: 999;
+    padding: 30px 0;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom, #000, transparent);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 30px 30px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    z-index: 999;
+  }
+  .header__sistemaSolar #menu {
+    display: none;
+    width: 100vw;
+    height: 50vh;
+  }
+  .header__sistemaSolar #menu .menu__ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__sistemaSolar #menu .menu__ul .menu__li {
+    list-style: none;
+  }
+  .header__sistemaSolar #menu .menu__ul .menu__li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+  }
+  .header__sistemaSolar .header__all {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__sistemaSolar .header__all .fa-solid {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+  }
+  .header__sistemaSolar .header__all #logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+    font-family: "nasa", serif;
+  }
+  .header__sistemaSolar .header__all nav {
+    width: 100%;
+    display: none;
+  }
+  .header__sistemaSolar .header__all nav ul {
+    margin-left: 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    text-align: center;
+  }
+  .header__sistemaSolar .header__all nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 6px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+  }
+  .header__sistemaSolar .header__all nav ul li #home {
+    padding-left: 6px;
+  }
+  .header__sistemaSolar .header__all nav ul li #noticias {
+    padding-left: 6px;
+  }
+  .header__sistemaSolar .header__all nav ul li #noticias:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__sistemaSolar .header__all nav ul li #sistemaSolar {
+    padding-left: 6px;
+  }
+  .header__sistemaSolar .header__all nav ul li #sistemaSolar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__sistemaSolar .header__all nav ul li #contato {
+    padding-left: 6px;
+  }
+  .header__sistemaSolar .header__all nav ul li #contato:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .main__sistemaSolar {
+    position: relative;
+    margin: 0 auto;
+    max-width: 90%;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100vw;
+  }
+  .main__sistemaSolar .second__section h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 50px;
+    margin: 0 40px;
+  }
+  .main__sistemaSolar .second__section .second__section__content {
+    margin: 40px auto;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu {
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu a {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    letter-spacing: 3px;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu a .p1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu a .p1::before {
+    display: none;
+    position: absolute;
+    left: -15px;
+    top: 8px;
+    content: "";
+    width: 10px;
+    height: 1px;
+    background-color: #fff;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu a .p2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu a .p2::before {
+    display: none;
+    position: absolute;
+    right: -35px;
+    top: 12px;
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: #fff;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .planetmenu {
+    z-index: 998;
+    width: 60%;
+    transition: 1s;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .planetmenu:hover {
+    transform: scale(1) rotate(0);
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .mercury {
+    width: 40%;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .jupiter {
+    width: 80%;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .saturn {
+    width: 160%;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .uranus {
+    width: 60%;
+  }
+  .main__sistemaSolar .second__section .second__section__content .planets__menu .neptune {
+    width: 60%;
+  }
+  .main__sistemaSolar .second__section .solarSystem {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+  }
+  .main__sistemaSolar .second__section .solarSystem #sun {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    animation: sun 5s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .mercury {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .mercury #mercury {
+    width: 5%;
+    animation: mercury-mobile 2s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .venus {
+    position: absolute;
+    width: 32%;
+    height: 32%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .venus #venus {
+    width: 5%;
+    animation: venus-mobile 4s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .earth {
+    position: absolute;
+    width: 39%;
+    height: 39%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .earth #earth {
+    width: 6%;
+    animation: earth-mobile 6s linear infinite;
+    position: relative;
+    z-index: 1;
+  }
+  .main__sistemaSolar .second__section .solarSystem .mars {
+    position: absolute;
+    width: 46%;
+    height: 46%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .mars #mars {
+    width: 5%;
+    animation: mars-mobile 8s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .jupiter {
+    position: absolute;
+    width: 53%;
+    height: 53%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .jupiter #jupiter {
+    width: 10%;
+    animation: jupiter-mobile 10s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .saturn {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .saturn #saturn {
+    width: 18%;
+    animation: saturn-mobile 14s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .uranus {
+    position: absolute;
+    width: 67%;
+    height: 67%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .uranus #uranus {
+    width: 4%;
+    animation: uranus-mobile 20s linear infinite;
+  }
+  .main__sistemaSolar .second__section .solarSystem .neptune {
+    position: absolute;
+    width: 74%;
+    height: 74%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main__sistemaSolar .second__section .solarSystem .neptune #neptune {
+    width: 4%;
+    animation: neptune-mobile 25s linear infinite;
+  }
+  .main__sistemaSolar .planets__section {
+    margin: 0 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .main__sistemaSolar .planets__section .title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #fff;
+    margin: 40px 0;
+    margin-bottom: 0;
+  }
+  .main__sistemaSolar .planets__section .planets__section__information {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .main__sistemaSolar .planets__section .planets__section__information p {
+    order: 2;
+    margin: 30px 0;
+    width: 100%;
+  }
+  .main__sistemaSolar .planets__section .planets__section__information img {
+    width: 15%;
+    order: 1;
+    margin-top: 30px;
+  }
+  .main__sistemaSolar .planets__section .planets__section__information #saturno__information__img {
+    width: 200px;
+  }
+}
 @media (max-width: 480px) {
   .header__sistemaSolar {
     z-index: 999;
@@ -3577,6 +6281,957 @@ hr {
   height: 600px;
 }
 
+@media (max-width: 1200px) {
+  .body__entrar {
+    background-image: url(img/bg2.jpg);
+    overflow-x: hidden;
+  }
+  .body__entrar .background {
+    display: none;
+  }
+  .header__entrar {
+    z-index: 999;
+    padding: 30px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom, #000, transparent);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 30px 30px;
+    z-index: 1;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    z-index: 999;
+  }
+  .header__entrar #menu {
+    display: none;
+    width: 100vw;
+    height: 50vh;
+  }
+  .header__entrar #menu .menu__ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__entrar #menu .menu__ul .menu__li {
+    list-style: none;
+  }
+  .header__entrar #menu .menu__ul .menu__li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+  }
+  .header__entrar .header__all {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__entrar .header__all #logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #fff;
+    margin-left: 40px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+    font-family: "nasa", serif;
+  }
+  .header__entrar .header__all i {
+    display: none;
+  }
+  .header__entrar .header__all .menu {
+    display: none;
+  }
+  .header__entrar .header__all nav {
+    width: 100%;
+  }
+  .header__entrar .header__all nav ul {
+    margin: 0 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+    text-align: center;
+  }
+  .header__entrar .header__all nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 6px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+  }
+  .header__entrar .header__all nav ul li #home {
+    padding-left: 6px;
+  }
+  .header__entrar .header__all nav ul li #home:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__entrar .header__all nav ul li #noticias {
+    padding-left: 6px;
+  }
+  .header__entrar .header__all nav ul li #noticias:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__entrar .header__all nav ul li #sistemaSolar {
+    padding-left: 6px;
+  }
+  .header__entrar .header__all nav ul li #sistemaSolar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__entrar .header__all nav ul li #entrar {
+    padding-left: 6px;
+  }
+  .header__entrar .header__all nav ul li #entrar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__entrar #entrar {
+    border-bottom: 1px solid #fff;
+  }
+  .header__entrar #sistemaSolar {
+    border-bottom: none;
+  }
+  .header__entrar #sistemaSolar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .main__entrar {
+    width: 100vw;
+    position: relative;
+    margin: 0 auto;
+    max-width: 90%;
+    overflow: hidden;
+    padding: 150px 0;
+    display: flex;
+    gap: 100px;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .form {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  .form h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 5px;
+    position: relative;
+  }
+  .form h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    bottom: 7px;
+    left: 0;
+  }
+  .form h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+  .form .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .form .icons img {
+    width: 40px;
+  }
+  .form p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+    margin: 0 20px;
+  }
+  .form p::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    bottom: 50%;
+    left: 0;
+    transform: translateX(-120%);
+  }
+  .form p::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    bottom: 50%;
+    right: 0;
+    transform: translateX(120%);
+  }
+  .form .email {
+    width: 90%;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form .email label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form .email .inputs {
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(200, 200, 200, 0.6);
+    border-right: 2px solid rgba(200, 200, 200, 0.6);
+    border-top: 1px solid #5a5a5a;
+    border-left: 1px solid #5a5a5a;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .form .senha {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form .senha label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form .senha .inputs {
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(200, 200, 200, 0.6);
+    border-right: 2px solid rgba(200, 200, 200, 0.6);
+    border-top: 1px solid #5a5a5a;
+    border-left: 1px solid #5a5a5a;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .form .criar {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .form .criar h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form .criar a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #fff;
+  }
+  .form #button-submit {
+    width: 30%;
+    height: 30px;
+    background: linear-gradient(to right, #fff, #b9b9b9);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 5px;
+    border-left: 2px solid #c5c5c5;
+    border-bottom: 2px solid #c5c5c5;
+    border-top: 0;
+    border-right: 0;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 2px;
+  }
+  .form hr {
+    width: 0.7px;
+    height: 600px;
+  }
+  hr {
+    display: none;
+    width: 1px;
+    height: 500px;
+  }
+  .form2 {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  .form2 h2 {
+    width: 60%;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center;
+    position: relative;
+  }
+  .form2 h2::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    bottom: 7px;
+    left: 0;
+  }
+  .form2 h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+  .form2 .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .form2 .icons img {
+    width: 40px;
+  }
+  .form2 p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+  }
+  .form2 p::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    bottom: 50%;
+    left: 0;
+    transform: translateX(-120%);
+  }
+  .form2 p::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    bottom: 50%;
+    right: 0;
+    transform: translateX(120%);
+  }
+  .form2 .email {
+    width: 90%;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form2 .email label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form2 .email .inputs {
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(200, 200, 200, 0.6);
+    border-right: 2px solid rgba(200, 200, 200, 0.6);
+    border-top: 1px solid #5a5a5a;
+    border-left: 1px solid #5a5a5a;
+    color: #fff;
+    font-size: 1rem;
+  }
+  .form2 .senha {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form2 .senha label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form2 .senha .inputs {
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(200, 200, 200, 0.6);
+    border-right: 2px solid rgba(200, 200, 200, 0.6);
+    border-top: 1px solid #5a5a5a;
+    border-left: 1px solid #5a5a5a;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .form2 .criar {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .form2 .criar h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form2 .criar a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #fff;
+  }
+  .form2 #button-submit {
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to right, #fff, #b9b9b9);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 5px;
+    border-left: 2px solid #c5c5c5;
+    border-bottom: 2px solid #c5c5c5;
+    border-top: 0;
+    border-right: 0;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 2px;
+  }
+  .form2 hr {
+    width: 0px;
+    height: 0px;
+  }
+}
+@media (max-width: 768px) {
+  .body__entrar {
+    background-image: url(img/bg2.jpg);
+    overflow-x: hidden;
+  }
+  .body__entrar .background {
+    display: none;
+  }
+  .header__entrar {
+    z-index: 999;
+    padding: 30px 0;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(to bottom, #000, transparent);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 0 30px 30px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    z-index: 999;
+  }
+  .header__entrar #menu {
+    display: none;
+    width: 100vw;
+    height: 50vh;
+  }
+  .header__entrar #menu .menu__ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__entrar #menu .menu__ul .menu__li {
+    list-style: none;
+  }
+  .header__entrar #menu .menu__ul .menu__li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+  }
+  .header__entrar .header__all {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .header__entrar .header__all .fa-solid {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+  }
+  .header__entrar .header__all #logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+    font-family: "nasa", serif;
+  }
+  .header__entrar .header__all nav {
+    width: 100%;
+    display: none;
+  }
+  .header__entrar .header__all nav ul {
+    margin-left: 40px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 60px;
+    text-align: center;
+  }
+  .header__entrar .header__all nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 6px;
+    text-shadow: 0 0 5px #fff;
+    text-decoration: none;
+  }
+  .header__entrar .header__all nav ul li #home {
+    padding-left: 6px;
+  }
+  .header__entrar .header__all nav ul li #noticias {
+    padding-left: 6px;
+  }
+  .header__entrar .header__all nav ul li #noticias:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__entrar .header__all nav ul li #sistemaSolar {
+    padding-left: 6px;
+  }
+  .header__entrar .header__all nav ul li #sistemaSolar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__entrar .header__all nav ul li #contato {
+    padding-left: 6px;
+  }
+  .header__entrar .header__all nav ul li #contato:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .header__entrar #entrar {
+    border-bottom: 1px solid #fff;
+  }
+  .header__entrar #sistemaSolar {
+    border-bottom: none;
+  }
+  .header__entrar #sistemaSolar:hover {
+    border-bottom: 1px solid #fff;
+  }
+  .main__entrar {
+    width: 100vw;
+    position: relative;
+    margin: 0 auto;
+    max-width: 90%;
+    overflow: hidden;
+    padding: 150px 0;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .form {
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  .form h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 5px;
+    position: relative;
+  }
+  .form h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    bottom: 7px;
+    left: 0;
+  }
+  .form h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+  .form .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .form .icons img {
+    width: 40px;
+  }
+  .form p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+    margin: 0 20px;
+  }
+  .form p::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    bottom: 50%;
+    left: 0;
+    transform: translateX(-120%);
+  }
+  .form p::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    bottom: 50%;
+    right: 0;
+    transform: translateX(120%);
+  }
+  .form .email {
+    width: 90%;
+    margin: 0 5px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form .email label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form .email .inputs {
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(200, 200, 200, 0.6);
+    border-right: 2px solid rgba(200, 200, 200, 0.6);
+    border-top: 1px solid #5a5a5a;
+    border-left: 1px solid #5a5a5a;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .form .senha {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form .senha label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form .senha .inputs {
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(200, 200, 200, 0.6);
+    border-right: 2px solid rgba(200, 200, 200, 0.6);
+    border-top: 1px solid #5a5a5a;
+    border-left: 1px solid #5a5a5a;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .form .criar {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .form .criar h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form .criar a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #fff;
+  }
+  .form #button-submit {
+    width: 30%;
+    height: 30px;
+    background: linear-gradient(to right, #fff, #b9b9b9);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 5px;
+    border-left: 2px solid #c5c5c5;
+    border-bottom: 2px solid #c5c5c5;
+    border-top: 0;
+    border-right: 0;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 2px;
+  }
+  .form hr {
+    width: 0.7px;
+    height: 600px;
+  }
+  hr {
+    display: none;
+    width: 1px;
+    height: 500px;
+  }
+  .form2 {
+    width: 80%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  .form2 h2 {
+    width: 60%;
+    font-family: "Poppins", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 5px;
+    text-align: center;
+    position: relative;
+  }
+  .form2 h2::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 10px;
+    bottom: 7px;
+    left: 0;
+  }
+  .form2 h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+  .form2 .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  .form2 .icons img {
+    width: 40px;
+  }
+  .form2 p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    position: relative;
+  }
+  .form2 p::before {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    bottom: 50%;
+    left: 0;
+    transform: translateX(-120%);
+  }
+  .form2 p::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 1px;
+    background-color: #fff;
+    bottom: 50%;
+    right: 0;
+    transform: translateX(120%);
+  }
+  .form2 .email {
+    width: 90%;
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+  }
+  .form2 .email label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form2 .email .inputs {
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(200, 200, 200, 0.6);
+    border-right: 2px solid rgba(200, 200, 200, 0.6);
+    border-top: 1px solid #5a5a5a;
+    border-left: 1px solid #5a5a5a;
+    color: #fff;
+    font-size: 1.2rem;
+  }
+  .form2 .senha {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .form2 .senha label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form2 .senha .inputs {
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid rgba(200, 200, 200, 0.6);
+    border-right: 2px solid rgba(200, 200, 200, 0.6);
+    border-top: 1px solid #5a5a5a;
+    border-left: 1px solid #5a5a5a;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .form2 .criar {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .form2 .criar h4 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+  }
+  .form2 .criar a {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 10px #fff;
+  }
+  .form2 #button-submit {
+    width: 50%;
+    height: 30px;
+    background: linear-gradient(to right, #fff, #b9b9b9);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    border-radius: 5px;
+    border-left: 2px solid #c5c5c5;
+    border-bottom: 2px solid #c5c5c5;
+    border-top: 0;
+    border-right: 0;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #000;
+    letter-spacing: 2px;
+  }
+  .form2 hr {
+    width: 0px;
+    height: 0px;
+  }
+}
 @media (max-width: 480px) {
   .body__entrar {
     background-image: url(img/bg2.jpg);
