@@ -124,7 +124,7 @@
 // general header...
 @mixin header {
     z-index: 999;
-    padding: 30px 0;
+    padding: 30px 30px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -163,7 +163,7 @@
 
     .header__all {
         margin: 0 auto;
-        width: 70%;
+        max-width: 80rem;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -243,7 +243,7 @@
     position: relative;
     padding-top: 150px;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 80rem;
     overflow: hidden;
 }
 
